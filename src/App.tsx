@@ -568,16 +568,13 @@ export default function App() {
       <section className="hero-band">
         <div className="hero-band__inner">
           <div className="hero-copy">
-            <p className="hero-copy__eyebrow">Khan Academy staff library</p>
+            <p className="hero-copy__eyebrow">Khan Academy Recommended Reading Lists</p>
             <h1>
-              We&apos;re here with recommended books to{" "}
-              <span className="hero-copy__highlight">Keep Everyone Reading</span>
+              <span className="hero-copy__highlight">
+                Books That Children Will Not Want to Put Down!
+              </span>
             </h1>
-            <p className="hero-copy__lead">
-              Picture books, chapter books, middle grade adventures, and young
-              adult favorites selected by the Khan Academy team and organized
-              into a library that&apos;s easier to share.
-            </p>
+            <p className="hero-copy__lead">{readingData.intro}</p>
 
             <div className="hero-copy__actions">
               <a className="button button--primary" href="#start-here">
