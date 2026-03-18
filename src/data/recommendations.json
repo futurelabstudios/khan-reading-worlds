@@ -1,0 +1,1210 @@
+{
+  "sourceUrl": "https://docs.google.com/document/d/e/2PACX-1vSdvMDG0MOOM-RLv-lG3hd3F18Vcnq-fqSMxkvBZZDccUJrMiU3fiP89uVtXRAZ5wRlWH0l_Ymwhki7/pub",
+  "syncedAt": "2026-03-18T18:29:22.710Z",
+  "intro": "Books that children will not want to put down, organized by age band, mood, and reading adventure.",
+  "ageGroups": [
+    {
+      "id": "picture-books-by-topic",
+      "label": "Picture Books by topic",
+      "themes": [
+        {
+          "id": "picture-books-by-topic-try-try-again",
+          "title": "Try, try again!",
+          "recommendations": [
+            {
+              "id": "picture-books-by-topic-try-try-again-1",
+              "headline": "The Most Magnificent Thing by Ashley Spires (recommended by Jordan Peavey)",
+              "title": "The Most Magnificent Thing",
+              "author": "Ashley Spires",
+              "recommender": "Jordan Peavey",
+              "meta": "Recommended by Jordan Peavey",
+              "summary": "This is a great book about growth mindset and perseverance. A little girl sets out with her faithful dog assistant who wants to build something that doesn’t turn out as she expected, she gets MAD, then takes a break and realizes she can tweak her designs to create something pretty wonderful. It’s sweet, funny, totally kid and parent approved.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.amazon.com/Most-Magnificent-Thing-Ashley-Spires/dp/1554537045",
+                  "url": "https://www.amazon.com/Most-Magnificent-Thing-Ashley-Spires/dp/1554537045"
+                }
+              ]
+            },
+            {
+              "id": "picture-books-by-topic-try-try-again-2",
+              "headline": "The Little Engine that Could by Watty Piper",
+              "title": "The Little Engine that Could",
+              "author": "Watty Piper",
+              "recommender": "",
+              "meta": "",
+              "summary": "A classic tale of perseverance in which a small engine works hard to help deliver toys to children on the other side of a hill. “I think I can; I think I can” is a great montra when tackling any task.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/book/show/824204.The_Little_Engine_That_Could",
+                  "url": "https://www.goodreads.com/book/show/824204.The_Little_Engine_That_Could"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "picture-books-by-topic-snow-day-adventures",
+          "title": "Snow Day adventures!",
+          "recommendations": [
+            {
+              "id": "picture-books-by-topic-snow-day-adventures-1",
+              "headline": "The Snowy Day by Ezra Jack Keats",
+              "title": "The Snowy Day",
+              "author": "Ezra Jack Keats",
+              "recommender": "",
+              "meta": "",
+              "summary": "Experience the joy of a snow day adventure with Peter as he explores the big snowy city. Creative and timeless illustrations help tell this story of a small boy on a big adventure!",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/the-snowy-day",
+                  "url": "https://www.commonsensemedia.org/book-reviews/the-snowy-day"
+                }
+              ]
+            },
+            {
+              "id": "picture-books-by-topic-snow-day-adventures-2",
+              "headline": "Snowball Moon by Fran Cannon Slayton (recommended by Kim)",
+              "title": "Snowball Moon",
+              "author": "Fran Cannon Slayton",
+              "recommender": "Kim",
+              "meta": "Recommended by Kim",
+              "summary": "When the power goes out at night during a snowstorm, a family (and their pets) have fun in the snow. This rhyming picture book is a perfect read-aloud!",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.amazon.com/Snowball-Moon-Fran-Cannon-Slayton/dp/1499804954",
+                  "url": "https://www.amazon.com/Snowball-Moon-Fran-Cannon-Slayton/dp/1499804954"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "picture-books-by-topic-imagination-creating-your-own-world",
+          "title": "Imagination: creating your own world!",
+          "recommendations": [
+            {
+              "id": "picture-books-by-topic-imagination-creating-your-own-world-1",
+              "headline": "Harold and the Purple Crayon by Crockett Johnson",
+              "title": "Harold and the Purple Crayon",
+              "author": "Crockett Johnson",
+              "recommender": "",
+              "meta": "",
+              "summary": "A timeless story of a child who creates his own world through his imagination and a magic purple crayon!",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/harold-and-the-purple-crayon",
+                  "url": "https://www.commonsensemedia.org/book-reviews/harold-and-the-purple-crayon"
+                }
+              ]
+            },
+            {
+              "id": "picture-books-by-topic-imagination-creating-your-own-world-2",
+              "headline": "Extra Yarn by Mac Barnett",
+              "title": "Extra Yarn",
+              "author": "Mac Barnett",
+              "recommender": "",
+              "meta": "",
+              "summary": "In this imaginative story a young girl named Annabelle adds color to her black-and-white world through a magic box of yard. This will inspire readers to change the world!",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/extra-yarn",
+                  "url": "https://www.commonsensemedia.org/book-reviews/extra-yarn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "picture-books-by-topic-free-to-be-me",
+          "title": "Free to be me!",
+          "recommendations": [
+            {
+              "id": "picture-books-by-topic-free-to-be-me-1",
+              "headline": "Marisol McDonald series by Monica Brown (recommended by Kat)",
+              "title": "Marisol McDonald series",
+              "author": "Monica Brown",
+              "recommender": "Kat",
+              "meta": "Recommended by Kat",
+              "summary": "with a great female character who doesn’t always follow the “rules”. Marisol is different. From her looks to her favorite foods to her hobbies, she stands out and that’s okay with her!",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.amazon.com/gp/bookseries/B01N2QOH0P/ref=dp_st_0892392738",
+                  "url": "https://www.amazon.com/gp/bookseries/B01N2QOH0P/ref=dp_st_0892392738"
+                }
+              ]
+            },
+            {
+              "id": "picture-books-by-topic-free-to-be-me-2",
+              "headline": "Lucia the luchadora by Cynthia Leonor Garza (recommended by Kat)",
+              "title": "Lucia the luchadora",
+              "author": "Cynthia Leonor Garza",
+              "recommender": "Kat",
+              "meta": "Recommended by Kat",
+              "summary": "This is a story about a little girl luchadora who shows that boys and girls are equally strong. This book has some good onomatopoeic words, making it a fun read-aloud!",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.amazon.com/Lucia-Luchadora-Cynthia-Leonor-Garza/dp/1576878279",
+                  "url": "https://www.amazon.com/Lucia-Luchadora-Cynthia-Leonor-Garza/dp/1576878279"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "picture-books-by-topic-adventures-in-reading",
+          "title": "Adventures in reading!",
+          "recommendations": [
+            {
+              "id": "picture-books-by-topic-adventures-in-reading-1",
+              "headline": "Henry and the Buccaneer Bunnies by Carolyn Crimi",
+              "title": "Henry and the Buccaneer Bunnies",
+              "author": "Carolyn Crimi",
+              "recommender": "",
+              "meta": "",
+              "summary": "Henry prefers reading to pirating, and it’s a good thing when he book knowledge is needed to save the day!",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/book/show/169960.Henry_the_Buccaneer_Bunnies",
+                  "url": "https://www.goodreads.com/book/show/169960.Henry_the_Buccaneer_Bunnies"
+                }
+              ]
+            },
+            {
+              "id": "picture-books-by-topic-adventures-in-reading-2",
+              "headline": "Charlie Cook’s Favorite Book (and many others) by Julia Donaldson and Axel Scheffler",
+              "title": "Charlie Cook’s Favorite Book (and many others)",
+              "author": "Julia Donaldson and Axel Scheffler",
+              "recommender": "",
+              "meta": "",
+              "summary": "Getting ready for an incepetion-like experience! Charlie is reading a book about a character who is reading a book about a character who is reading… You see how this goes. It’s good fun and entertaining to see how this tale goes full circle back to Charlie.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/book/show/983045.Charlie_Cook_s_Favorite_Book",
+                  "url": "https://www.goodreads.com/book/show/983045.Charlie_Cook_s_Favorite_Book"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "picture-books-by-topic-sillies-giggles-and-overall-fun",
+          "title": "Sillies, giggles, and overall fun!",
+          "recommendations": [
+            {
+              "id": "picture-books-by-topic-sillies-giggles-and-overall-fun-1",
+              "headline": "The Book with No Pictures by B.J. Novak",
+              "title": "The Book with No Pictures",
+              "author": "B.J. Novak",
+              "recommender": "",
+              "meta": "",
+              "summary": "There is only one rule in this one of a kind read-aloud book with no pictures: the reader MUST read every work on the page. Get ready for a giggle fest as the reader is forced to utter silly statements that elicit engagement and laughter despite being comprised of only words.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/book/show/20821299-the-book-with-no-pictures",
+                  "url": "https://www.goodreads.com/book/show/20821299-the-book-with-no-pictures"
+                }
+              ]
+            },
+            {
+              "id": "picture-books-by-topic-sillies-giggles-and-overall-fun-2",
+              "headline": "Bedtime Math by Laura Overdeck (recommended by Jordan Peavey)",
+              "title": "Bedtime Math",
+              "author": "Laura Overdeck",
+              "recommender": "Jordan Peavey",
+              "meta": "Recommended by Jordan Peavey. Overdeck is a major donor for Khan Academy)",
+              "summary": "A fun series of math story problems and silly illustrations for a variety of ages (wee ones - preschool), little kids and big kids.",
+              "note": "",
+              "links": [
+                {
+                  "label": "http://bedtimemath.org/books/",
+                  "url": "http://bedtimemath.org/books/"
+                }
+              ]
+            },
+            {
+              "id": "picture-books-by-topic-sillies-giggles-and-overall-fun-3",
+              "headline": "Anything by Dr. Seuss!",
+              "title": "Anything by Dr. Seuss!",
+              "author": "",
+              "recommender": "",
+              "meta": "",
+              "summary": "Rhyming tales, silly stories, and life lessons! Dr. Seuss’ classic books have something for everyone!",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/search/dr%20seuss?f%5B0%5D=field_reference_review_ent_prod%253Atype%3Acsm_book",
+                  "url": "https://www.commonsensemedia.org/search/dr%20seuss?f%5B0%5D=field_reference_review_ent_prod%253Atype%3Acsm_book"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "picture-books-by-topic-fact-finding-missions-and-science-stories",
+          "title": "Fact-finding missions and science stories!",
+          "recommendations": [
+            {
+              "id": "picture-books-by-topic-fact-finding-missions-and-science-stories-1",
+              "headline": "Any of the Ada Twist Scientist, Iggy Peck Architect series by Andrea Beaty ) (recommended by Jordan Peavey)",
+              "title": "Any of the Ada Twist Scientist, Iggy Peck Architect series",
+              "author": "Andrea Beaty )",
+              "recommender": "Jordan Peavey",
+              "meta": "Recommended by Jordan Peavey",
+              "summary": "These stories engage readers with characters who excel in STEM and show the power of invention, creation, and curiosity!",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.amazon.com/Ada-Twist-Scientist-Andrea-Beaty/dp/1419721372",
+                  "url": "https://www.amazon.com/Ada-Twist-Scientist-Andrea-Beaty/dp/1419721372"
+                }
+              ]
+            },
+            {
+              "id": "picture-books-by-topic-fact-finding-missions-and-science-stories-2",
+              "headline": "Little Doctor and the Fearless Beast by Sophie Gilmore With a young female doctor protagonist, this book talks about facing fears, not giving up and works in an ecological angle. (recommended by Kat)",
+              "title": "Little Doctor and the Fearless Beast",
+              "author": "Sophie Gilmore With a young female doctor protagonist, this book talks about facing fears, not giving up and works in an ecological angle.",
+              "recommender": "Kat",
+              "meta": "Recommended by Kat",
+              "summary": "",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.amazon.com/Little-Doctor-Fearless-Sophie-Gilmore/dp/1771473444",
+                  "url": "https://www.amazon.com/Little-Doctor-Fearless-Sophie-Gilmore/dp/1771473444"
+                }
+              ]
+            },
+            {
+              "id": "picture-books-by-topic-fact-finding-missions-and-science-stories-3",
+              "headline": "National Geographic Kids books, especially the “ Weird but True ” series",
+              "title": "National Geographic Kids books, especially the “ Weird but True ” series",
+              "author": "",
+              "recommender": "",
+              "meta": "",
+              "summary": "This series allows readers to explore the wacky world from science, space, and weather to geography, food, and pop culture. Interesting photos and illustrations make learning fun!",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/book/show/7159818-weird-but-true?from_search=true&qid=RHVqX8OJPs&rank=11",
+                  "url": "https://www.goodreads.com/book/show/7159818-weird-but-true?from_search=true&qid=RHVqX8OJPs&rank=11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "picture-books-by-topic-better-together",
+          "title": "Better together!",
+          "recommendations": [
+            {
+              "id": "picture-books-by-topic-better-together-1",
+              "headline": "Bear Snores On (and others in the series) by Karma Wilson",
+              "title": "Bear Snores On (and others in the series)",
+              "author": "Karma Wilson",
+              "recommender": "",
+              "meta": "",
+              "summary": "As Bear hibernates for the winter, his animal and bird neighbors make their way into his cave to keep warm. They entertain themselves while Bear sleeps on, but eventually he wakes to find a party in his home! A fun read aloud with beautiful illustration, captivating rhymes, and a heart-felt message.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/book/show/867248.Bear_Snores_On",
+                  "url": "https://www.goodreads.com/book/show/867248.Bear_Snores_On"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "picture-books-by-topic-interplanetary-visitors",
+          "title": "Interplanetary visitors!",
+          "recommendations": [
+            {
+              "id": "picture-books-by-topic-interplanetary-visitors-1",
+              "headline": "Zita the Spacegirl series by Ben Hatke",
+              "title": "Zita the Spacegirl series",
+              "author": "Ben Hatke",
+              "recommender": "",
+              "meta": "",
+              "summary": "When her best friend gets abducted by an evil alien cult, Zita’s life takes a turn for the cosmic and she finds herself on a strange planet inhabited by humanoid chickens and neurotic robots. Zita’s determination to find her way back home to earth has her assuming the role of intergalactic hero in this delightful, action-packed science fiction series.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/zita-the-spacegirl",
+                  "url": "https://www.commonsensemedia.org/book-reviews/zita-the-spacegirl"
+                }
+              ]
+            },
+            {
+              "id": "picture-books-by-topic-interplanetary-visitors-2",
+              "headline": "Hilo: The Boy Who Crashed to Earth by Judd Winick",
+              "title": "Hilo: The Boy Who Crashed to Earth",
+              "author": "Judd Winick",
+              "recommender": "",
+              "meta": "",
+              "summary": "D.J’s life is forever changed when Hilo, a boy with superpowers from another planet, comes crashing to Earth. A fun and action-packed story of an unusual friend!",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/hilo-the-boy-who-crashed-to-earth-hilo-book-1",
+                  "url": "https://www.commonsensemedia.org/book-reviews/hilo-the-boy-who-crashed-to-earth-hilo-book-1"
+                }
+              ]
+            },
+            {
+              "id": "picture-books-by-topic-interplanetary-visitors-3",
+              "headline": "The Little Prince by Antoine de Saint-Exupéry",
+              "title": "The Little Prince",
+              "author": "Antoine de Saint-Exupéry",
+              "recommender": "",
+              "meta": "",
+              "summary": "These tales of the little prince’s travels across the universe teach readers to look beneath the surface in order to find the real truth and meaning in all things.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/book/show/157993.The_Little_Prince",
+                  "url": "https://www.goodreads.com/book/show/157993.The_Little_Prince"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chapter-books",
+      "label": "Chapter Books",
+      "themes": [
+        {
+          "id": "chapter-books-detectives-on-the-case",
+          "title": "Detectives: on the case!",
+          "recommendations": [
+            {
+              "id": "chapter-books-detectives-on-the-case-1",
+              "headline": "Encyclopedia Brown series by Donald Sobel",
+              "title": "Encyclopedia Brown series",
+              "author": "Donald Sobel",
+              "recommender": "",
+              "meta": "",
+              "summary": "Put on your detective hat and follow the clues with Leroy “Encyclopedia” Brown as he solves the case. This series teaches young readers to play close attention to details...they turn out to be important when you are a detective!",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/encyclopedia-brown-series",
+                  "url": "https://www.commonsensemedia.org/book-reviews/encyclopedia-brown-series"
+                }
+              ]
+            },
+            {
+              "id": "chapter-books-detectives-on-the-case-2",
+              "headline": "From the Mixed Up Files of Mrs Basil E Frankweiler by E. L. Konigsburg",
+              "title": "From the Mixed Up Files of Mrs Basil E Frankweiler",
+              "author": "E. L. Konigsburg",
+              "recommender": "",
+              "meta": "",
+              "summary": "Two sibling runaways find themselves mixed up in a museum mystery and endeavor to research to solve the case.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/from-the-mixed-up-files-of-mrs-basil-e-frankweiler",
+                  "url": "https://www.commonsensemedia.org/book-reviews/from-the-mixed-up-files-of-mrs-basil-e-frankweiler"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chapter-books-magical-missions-and-intergalactic-adventures",
+          "title": "Magical missions and intergalactic adventures!",
+          "recommendations": [
+            {
+              "id": "chapter-books-magical-missions-and-intergalactic-adventures-1",
+              "headline": "Magic Treehouse series by Mary Pope Osborne",
+              "title": "Magic Treehouse series",
+              "author": "Mary Pope Osborne",
+              "recommender": "",
+              "meta": "",
+              "summary": "A brother and sister are sent on a series of adventures and missions through their magical treehouse.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/magic-tree-house-series",
+                  "url": "https://www.commonsensemedia.org/book-reviews/magic-tree-house-series"
+                }
+              ]
+            },
+            {
+              "id": "chapter-books-magical-missions-and-intergalactic-adventures-2",
+              "headline": "13 Story Treehouse series by Andy Griffiths",
+              "title": "13 Story Treehouse series",
+              "author": "Andy Griffiths",
+              "recommender": "",
+              "meta": "",
+              "summary": "Andy and Terry are stuggling to finish their book because they are constantly distracted by all of the interesting things in their 13 story treehouse!",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/the-13-story-treehouse-the-treehouse-books-book-1",
+                  "url": "https://www.commonsensemedia.org/book-reviews/the-13-story-treehouse-the-treehouse-books-book-1"
+                }
+              ]
+            },
+            {
+              "id": "chapter-books-magical-missions-and-intergalactic-adventures-3",
+              "headline": "Anything by Roald Dahl!",
+              "title": "Anything by Roald Dahl!",
+              "author": "",
+              "recommender": "",
+              "meta": "",
+              "summary": "From J ames and the Giant Peach to The Fantastic Mr. Fox , Roald Dahl’s lively characters and interesting worlds continue to delight. For a different take, try his autobiographical account of his life as a young boy: Boy: Tales of Childhood .",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://rarestkindofbest.com/2011/10/04/a-roald-dahl-reading-list/",
+                  "url": "https://rarestkindofbest.com/2011/10/04/a-roald-dahl-reading-list/"
+                }
+              ]
+            },
+            {
+              "id": "chapter-books-magical-missions-and-intergalactic-adventures-4",
+              "headline": "Seymour and Hau series by Melanie Morse",
+              "title": "Seymour and Hau series",
+              "author": "Melanie Morse",
+              "recommender": "",
+              "meta": "",
+              "summary": "Buckle in for another intergalactic buddy story with Seymour and Hau! These two travel the globe helping others and solving mysteries.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://seymourandhau.com/",
+                  "url": "https://seymourandhau.com/"
+                }
+              ]
+            },
+            {
+              "id": "chapter-books-magical-missions-and-intergalactic-adventures-5",
+              "headline": "Galaxy Zack series by Ray O’Ryan",
+              "title": "Galaxy Zack series",
+              "author": "Ray O’Ryan",
+              "recommender": "",
+              "meta": "",
+              "summary": "Join Zack in his adventures as he leaves Earth for school on another planet. At first unsure of his new surrounding, Zack makes friends and begins to enjoy his new home.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/series/99705",
+                  "url": "https://www.goodreads.com/series/99705"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chapter-books-through-the-eyes-of-animals",
+          "title": "Through the eyes of animals",
+          "recommendations": [
+            {
+              "id": "chapter-books-through-the-eyes-of-animals-1",
+              "headline": "The World According to Humphrey series by Betty Birney",
+              "title": "The World According to Humphrey series",
+              "author": "Betty Birney",
+              "recommender": "",
+              "meta": "",
+              "summary": "Explore the world through Humphrey the hamster's eyes. As the class pet of room 26, Humphrey not only learns in class but also when he spends the weekend with different students.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.bettybirney.com/humphrey.html",
+                  "url": "https://www.bettybirney.com/humphrey.html"
+                }
+              ]
+            },
+            {
+              "id": "chapter-books-through-the-eyes-of-animals-2",
+              "headline": "Press Start series by Thomas Flintham",
+              "title": "Press Start series",
+              "author": "Thomas Flintham",
+              "recommender": "",
+              "meta": "",
+              "summary": "Easy to read with high-interest content, these books capture the minds of video game lovers. Super Rabbit Boy must save Animal Town!",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/book/show/30254993-game-over-super-rabbit-boy",
+                  "url": "https://www.goodreads.com/book/show/30254993-game-over-super-rabbit-boy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chapter-books-honing-your-craft",
+          "title": "Honing your craft",
+          "recommendations": [
+            {
+              "id": "chapter-books-honing-your-craft-1",
+              "headline": "Dear Max by Sally Grindley",
+              "title": "Dear Max",
+              "author": "Sally Grindley",
+              "recommender": "",
+              "meta": "",
+              "summary": "Written as a series of letters between a boy and his favorite author, these books will inspire young readers to pick up a pen and start writing a story of their own!",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/book/show/289440.Dear_Max",
+                  "url": "https://www.goodreads.com/book/show/289440.Dear_Max"
+                }
+              ]
+            },
+            {
+              "id": "chapter-books-honing-your-craft-2",
+              "headline": "Jedi Academy series",
+              "title": "Jedi Academy series",
+              "author": "",
+              "recommender": "",
+              "meta": "",
+              "summary": "What would happen if your middle school experience collided with the Star Wars universe? Well, look no further, that’s exactly what this series brings to print!",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/series/131336",
+                  "url": "https://www.goodreads.com/series/131336"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle-grade-readers-between-the-ages-of-8-and-12",
+      "label": "Middle Grade (readers between the ages of 8 and 12)",
+      "themes": [
+        {
+          "id": "middle-grade-readers-between-the-ages-of-8-and-12-escaping-boredom",
+          "title": "Escaping boredom!",
+          "recommendations": [
+            {
+              "id": "middle-grade-readers-between-the-ages-of-8-and-12-escaping-boredom-1",
+              "headline": "The Phantom Tollbooth by Norton Juster",
+              "title": "The Phantom Tollbooth",
+              "author": "Norton Juster",
+              "recommender": "",
+              "meta": "",
+              "summary": "A deeply goofy, heartfelt allegory about knowledge. Milo is a sullen boy who doesn't really get the point of learning. One day, a large toy car and a tollbooth appear in his bedroom, and on a whim, Milo decides to place a nickel in the tollbooth and drive through. (Recommended by David Rheinstrom; look for the edition illustrated by Jules Feiffer)",
+              "note": "",
+              "links": []
+            }
+          ]
+        },
+        {
+          "id": "middle-grade-readers-between-the-ages-of-8-and-12-fantasy-secret-powers-and-destiny",
+          "title": "Fantasy, secret powers and destiny!",
+          "recommendations": [
+            {
+              "id": "middle-grade-readers-between-the-ages-of-8-and-12-fantasy-secret-powers-and-destiny-1",
+              "headline": "The Order of Odd-Fish by James Kennedy",
+              "title": "The Order of Odd-Fish",
+              "author": "James Kennedy",
+              "recommender": "",
+              "meta": "",
+              "summary": "Jo showed up as a bundled-up baby in a washing machine with a note pinned to her bassinet: \"This is Jo. Please take care of her, but beware: this is a dangerous baby .\" When Jo turns 13, she and her aunt Lily leave California for the uncanny world of Eldritch City, where Lily reveals some mind-boggling secrets about her own past, as well as Jo's. (Recommended by David Rheinstrom; contains creepy elements/mild body horror, but for a 12-year-old of a certain cast, this is a deeply wacky little book. On the border of YA.)",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/book/show/2584352-the-order-of-odd-fish",
+                  "url": "https://www.goodreads.com/book/show/2584352-the-order-of-odd-fish"
+                }
+              ]
+            },
+            {
+              "id": "middle-grade-readers-between-the-ages-of-8-and-12-fantasy-secret-powers-and-destiny-2",
+              "headline": "The Girl who Drank the Moon by Kelly Barnhill",
+              "title": "The Girl who Drank the Moon",
+              "author": "Kelly Barnhill",
+              "recommender": "",
+              "meta": "",
+              "summary": "This book tells the story of Luna who, after being raised by a witch, must figure out how to handle the magical powers she was accidentally given. She must control her powers before it's too late.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/the-girl-who-drank-the-moon",
+                  "url": "https://www.commonsensemedia.org/book-reviews/the-girl-who-drank-the-moon"
+                }
+              ]
+            },
+            {
+              "id": "middle-grade-readers-between-the-ages-of-8-and-12-fantasy-secret-powers-and-destiny-3",
+              "headline": "Magyk / Septimus Heap series by Angie Sage",
+              "title": "Magyk / Septimus Heap series",
+              "author": "Angie Sage",
+              "recommender": "",
+              "meta": "",
+              "summary": "This magic-filled fun series tells the story of a wizard apprentice and his quest to become an ExtraOrdinary wizard.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/septimus-heap-series",
+                  "url": "https://www.commonsensemedia.org/book-reviews/septimus-heap-series"
+                }
+              ]
+            },
+            {
+              "id": "middle-grade-readers-between-the-ages-of-8-and-12-fantasy-secret-powers-and-destiny-4",
+              "headline": "Redwall series by Brian Jacques",
+              "title": "Redwall series",
+              "author": "Brian Jacques",
+              "recommender": "",
+              "meta": "",
+              "summary": "Be transported to Redwall complete with anthropomorphic characters, long-told legends, and unlikely heroes.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/redwall-redwall-book-1",
+                  "url": "https://www.commonsensemedia.org/book-reviews/redwall-redwall-book-1"
+                }
+              ]
+            },
+            {
+              "id": "middle-grade-readers-between-the-ages-of-8-and-12-fantasy-secret-powers-and-destiny-5",
+              "headline": "Harry Potter series by J.K. Rowling",
+              "title": "Harry Potter series",
+              "author": "J.K. Rowling",
+              "recommender": "",
+              "meta": "",
+              "summary": "Loved world-wide, this is a series filled with magic, friendship, sacrifice, and above all--love.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/lists/harry-potter-book-series",
+                  "url": "https://www.commonsensemedia.org/lists/harry-potter-book-series"
+                }
+              ]
+            },
+            {
+              "id": "middle-grade-readers-between-the-ages-of-8-and-12-fantasy-secret-powers-and-destiny-6",
+              "headline": "Fablehaven series by Brandon Mull",
+              "title": "Fablehaven series",
+              "author": "Brandon Mull",
+              "recommender": "",
+              "meta": "",
+              "summary": "Siblings enbark on adventure when an ordinary stay at their grandparents house turns out to be a mysterious puzzle to solve that opens their eyes to a magical kingdom.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/fablehaven-fablehaven-series-book-1",
+                  "url": "https://www.commonsensemedia.org/book-reviews/fablehaven-fablehaven-series-book-1"
+                }
+              ]
+            },
+            {
+              "id": "middle-grade-readers-between-the-ages-of-8-and-12-fantasy-secret-powers-and-destiny-7",
+              "headline": "Dragon Pearl by Yoon Ha Lee (recommended by Alexis)",
+              "title": "Dragon Pearl",
+              "author": "Yoon Ha Lee",
+              "recommender": "Alexis",
+              "meta": "Recommended by Alexis",
+              "summary": "Min, a 13-year-old shapeshifting fox spirit, lives with her family on the dust-ridden and impoverished planet Jinju. And Min is counting down the day until she can join the Space Forces just like her older brother Jun, and see more of the Thousand Worlds. But when word reaches their family that Jun has gone missing and is suspected of deserting to find the Dragon Pearl, she decides that she’s done waiting and sets out to find her brother so she can clear his name.",
+              "note": "",
+              "links": []
+            }
+          ]
+        },
+        {
+          "id": "middle-grade-readers-between-the-ages-of-8-and-12-mischief-and-hijinks",
+          "title": "Mischief and hijinks!",
+          "recommendations": [
+            {
+              "id": "middle-grade-readers-between-the-ages-of-8-and-12-mischief-and-hijinks-1",
+              "headline": "The Great Brain series by John D Fitzgerald",
+              "title": "The Great Brain series",
+              "author": "John D Fitzgerald",
+              "recommender": "",
+              "meta": "",
+              "summary": "The best con man in the Midwest is only ten years old. Tom, a.k.a., the Great Brain, is a silver-tongued genius with a knack for turning a profit.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/series/50904",
+                  "url": "https://www.goodreads.com/series/50904"
+                }
+              ]
+            },
+            {
+              "id": "middle-grade-readers-between-the-ages-of-8-and-12-mischief-and-hijinks-2",
+              "headline": "Sealegs by Alex Shearer",
+              "title": "Sealegs",
+              "author": "Alex Shearer",
+              "recommender": "",
+              "meta": "",
+              "summary": "Twin brothers Eric and Clive are ready for adventure on the high seas, so instead of staying with their grandparents yet again, they stow away on the cruise ship on which their father serves as Senior Steward.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/book/show/1385221.Sea_Legs",
+                  "url": "https://www.goodreads.com/book/show/1385221.Sea_Legs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "middle-grade-readers-between-the-ages-of-8-and-12-accepting-the-challenge",
+          "title": "Accepting the challenge",
+          "recommendations": [
+            {
+              "id": "middle-grade-readers-between-the-ages-of-8-and-12-accepting-the-challenge-1",
+              "headline": "Mr Lemoncello’s Library series by Chris Grabenstein",
+              "title": "Mr Lemoncello’s Library series",
+              "author": "Chris Grabenstein",
+              "recommender": "",
+              "meta": "",
+              "summary": "12-year-old Kyle's knowledge of games and his friends' knowledge of books and libraries are put to the test when they have to play the biggest game yet; having to escape from Mr Lemoncello’s library using only their wits and the clues scattered around the library's different sections.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/escape-from-mr-lemoncellos-library-mr-lemoncellos-library-book-1",
+                  "url": "https://www.commonsensemedia.org/book-reviews/escape-from-mr-lemoncellos-library-mr-lemoncellos-library-book-1"
+                }
+              ]
+            },
+            {
+              "id": "middle-grade-readers-between-the-ages-of-8-and-12-accepting-the-challenge-2",
+              "headline": "Esperanza Rising by Pam Munoz Ryan",
+              "title": "Esperanza Rising",
+              "author": "Pam Munoz Ryan",
+              "recommender": "",
+              "meta": "",
+              "summary": "Esperanza faces new struggles in a new home and life very different from her family’s ranch in Mexico. When an unexpected sickness threatens their new life, Esperanza must rise to the challenge.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/esperanza-rising",
+                  "url": "https://www.commonsensemedia.org/book-reviews/esperanza-rising"
+                }
+              ]
+            },
+            {
+              "id": "middle-grade-readers-between-the-ages-of-8-and-12-accepting-the-challenge-3",
+              "headline": "Dreadnought by April Daniels (recommended by Alexis)",
+              "title": "Dreadnought",
+              "author": "April Daniels",
+              "recommender": "Alexis",
+              "meta": "Recommended by Alexis",
+              "summary": "Danny Tozer just inherited the world’s most powerful superhero Dreadnought’s powers, and now she’s got to figure a few things out. First, she’s got to figure out how to tell her parents that she’s transgender, and the magic that gave her the body she always wished she’d had is not something to be fixed. Next, she’s got to figure out how to use her new powers and if she wants to be Dreadnought. And after all that she still has to stop the super villain who killed the previous Dreadnought. It’s a lot for a girl to handle!",
+              "note": "(CW: transphobia, homophobia, violence, and language)",
+              "links": [
+                {
+                  "label": "Free on Audible right now",
+                  "url": "https://stories.audible.com/pdp/B072C3MZ8V?ref=adbl_ent_anon_ds_pdp_pc_pg-1-cntr-0-9"
+                }
+              ]
+            },
+            {
+              "id": "middle-grade-readers-between-the-ages-of-8-and-12-accepting-the-challenge-4",
+              "headline": "Flora and Ulysses (or almost anything by Kate DiCamillo)",
+              "title": "Flora and Ulysses (or almost anything",
+              "author": "Kate DiCamillo)",
+              "recommender": "",
+              "meta": "",
+              "summary": "This unlikely friendship between a cynic and a squirrel with superpowers gets an extra kick with comic strip illustrations to help readers visualize the story.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/flora-ulysses-the-illuminated-adventures",
+                  "url": "https://www.commonsensemedia.org/book-reviews/flora-ulysses-the-illuminated-adventures"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "middle-grade-readers-between-the-ages-of-8-and-12-epic-adventures",
+          "title": "Epic adventures",
+          "recommendations": [
+            {
+              "id": "middle-grade-readers-between-the-ages-of-8-and-12-epic-adventures-1",
+              "headline": "Haroun and the Sea of Stories by Salman Rushdie",
+              "title": "Haroun and the Sea of Stories",
+              "author": "Salman Rushdie",
+              "recommender": "",
+              "meta": "",
+              "summary": "This allegory centers on Haroun’s relationship with his father who is a famed storyteller. When forces seek to control these stories, Haroun must find allies in his quest to save the day.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/book/show/4835.Haroun_and_the_Sea_of_Stories",
+                  "url": "https://www.goodreads.com/book/show/4835.Haroun_and_the_Sea_of_Stories"
+                }
+              ]
+            },
+            {
+              "id": "middle-grade-readers-between-the-ages-of-8-and-12-epic-adventures-2",
+              "headline": "I Survived series",
+              "title": "I Survived series",
+              "author": "",
+              "recommender": "",
+              "meta": "",
+              "summary": "Explore thrilling stories from history through the eyes of a kid who lived to tell the tale.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/i-survived-series",
+                  "url": "https://www.commonsensemedia.org/book-reviews/i-survived-series"
+                }
+              ]
+            },
+            {
+              "id": "middle-grade-readers-between-the-ages-of-8-and-12-epic-adventures-3",
+              "headline": "Another Brooklyn by Jacqueline Woodson",
+              "title": "Another Brooklyn",
+              "author": "Jacqueline Woodson",
+              "recommender": "",
+              "meta": "",
+              "summary": "",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/book/show/27213163-another-brooklyn",
+                  "url": "https://www.goodreads.com/book/show/27213163-another-brooklyn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "young-adult",
+      "label": "Young Adult",
+      "themes": [
+        {
+          "id": "young-adult-deliciously-dark",
+          "title": "Deliciously dark",
+          "recommendations": [
+            {
+              "id": "young-adult-deliciously-dark-1",
+              "headline": "The Graveyard Book by Neil Gaiman (recommended by Jacque Clinton & Nick Breen)",
+              "title": "The Graveyard Book",
+              "author": "Neil Gaiman",
+              "recommender": "Jacque Clinton & Nick Breen",
+              "meta": "Recommended by Jacque Clinton & Nick Breen",
+              "summary": "Nobody Owens, known as Bod, is a normal boy. He would be completely normal if he didn’t live in a graveyard, being raised by ghosts, with a guardian who belongs to neither the world of the living nor the dead. There are adventures in the graveyard for a boy—an ancient Indigo Man, a gateway to the abandoned city of ghouls, the strange and terrible Sleer. But if Bod leaves the graveyard, he will be in danger from the man Jack—who has already killed Bod’s family.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/book/show/2213661.The_Graveyard_Book",
+                  "url": "https://www.goodreads.com/book/show/2213661.The_Graveyard_Book"
+                }
+              ]
+            },
+            {
+              "id": "young-adult-deliciously-dark-2",
+              "headline": "The Truly Devious series by Maureen Johnson (recommended by Kim)",
+              "title": "The Truly Devious series",
+              "author": "Maureen Johnson",
+              "recommender": "Kim",
+              "meta": "Recommended by Kim",
+              "summary": "In TRULY DEVIOUS, Stevie is thrilled when she's admitted to Ellingham Academy in Vermont. Not only is Ellingham a prestigious and free boarding school, it's the home of one of the greatest murder mysteries of all time: that of rich entrepreneur Albert Ellingham's wife and daughter in 1936. It seems like a strange reason to be excited, but Stevie studies crime. She reads textbooks and mysteries and listens to true-crime podcasts and hopes one day to be a detective. As Stevie settles into her dorm at Ellingham and meets the other eccentric students there, her one-day dream becomes a reality too soon. A student is found dead. Everyone deems the tragedy an accident, but Stevie's not so sure.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/truly-devious-book-1",
+                  "url": "https://www.commonsensemedia.org/book-reviews/truly-devious-book-1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "young-adult-missions-and-quests",
+          "title": "Missions and quests",
+          "recommendations": [
+            {
+              "id": "young-adult-missions-and-quests-1",
+              "headline": "Want by Cindy Pong (recommended by Charlotte)",
+              "title": "Want",
+              "author": "Cindy Pong",
+              "recommender": "Charlotte",
+              "meta": "Recommended by Charlotte",
+              "summary": "This dystopian novel is set in a society where the wealthy can purchase longer lives. Our hero, Jason Zhou, decides to changes things no matter the cost.",
+              "note": "",
+              "links": []
+            },
+            {
+              "id": "young-adult-missions-and-quests-2",
+              "headline": "Summoner series by Taran Matharu",
+              "title": "Summoner series",
+              "author": "Taran Matharu",
+              "recommender": "",
+              "meta": "",
+              "summary": "",
+              "note": "",
+              "links": []
+            },
+            {
+              "id": "young-adult-missions-and-quests-3",
+              "headline": "1st book is The Novice -",
+              "title": "1st book is The Novice -",
+              "author": "",
+              "recommender": "",
+              "meta": "",
+              "summary": "When blacksmith apprentice Fletcher discovers that he has the ability to summon demons from another world, he travels to Vocans Adept Military Academy. There, the gifted are trained in the art of summoning.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/the-novice-summoner-book-1",
+                  "url": "https://www.commonsensemedia.org/book-reviews/the-novice-summoner-book-1"
+                }
+              ]
+            },
+            {
+              "id": "young-adult-missions-and-quests-4",
+              "headline": "Six of Crows and Crooked Kingdom by Leigh Bardugo",
+              "title": "Six of Crows and Crooked Kingdom",
+              "author": "Leigh Bardugo",
+              "recommender": "",
+              "meta": "",
+              "summary": "Kaz Brekker is a thief, and a good one. But there's a reason they call him \"Dirtyhands\": in Ketterdam, a city known for its ruthless criminal element, Brekker may just be the most brilliant and ruthless of all. When he's kidnapped by a member of Ketterdam's Merchant Council, he's given an offer he's in no position to refuse: pull off the most daring heist in the history of the True Sea, in exchange for riches beyond imagining. To pull it off, he'll need a crew, a crew that's just as brilliant and ruthless as he is. A Long Way to a Small, Angry Planet and the Wayfarers series more broadly by Becky Chambers A team of weirdos aboard a small spaceship struggle to burn a wormhole tunnel through space to connect the Galactic Commons to a newly-contacted planet. Themes of found family and strength through diversity. Extremely kind-hearted and good.",
+              "note": "(Recommended by David Rheinstrom, who heard about it from Kim! CW: crime, violence, profanity, and references to sex) (CW: limited sex and profanity, interplanetary politics)",
+              "links": []
+            },
+            {
+              "id": "young-adult-missions-and-quests-5",
+              "headline": "Shadowshaper by Daniel José Older (recommended by Charlotte)",
+              "title": "Shadowshaper",
+              "author": "Daniel José Older",
+              "recommender": "Charlotte",
+              "meta": "Recommended by Charlotte",
+              "summary": "In this action-packed urban fantasy, Sierra Santiago is looking forward to a fun summer of making art, hanging out with her friends, and skating around Brooklyn. But then a weird things start to happen. Sierra soon discovers a supernatural order called the Shadowshapers, who connect with spirits via paintings, music, and stories.",
+              "note": "",
+              "links": []
+            }
+          ]
+        },
+        {
+          "id": "young-adult-fantastic-worlds",
+          "title": "Fantastic worlds",
+          "recommendations": [
+            {
+              "id": "young-adult-fantastic-worlds-1",
+              "headline": "How Long 'Til Black Future Month? (short stories) by N. K. Jemisin (recommended by Charlotte)",
+              "title": "How Long 'Til Black Future Month? (short stories)",
+              "author": "N. K. Jemisin",
+              "recommender": "Charlotte",
+              "meta": "Recommended by Charlotte",
+              "summary": "Spirits haunt the flooded streets of New Orleans in the aftermath of Hurricane Katrina. In a parallel universe, a utopian society watches our world, trying to learn from our mistakes. A black mother in the Jim Crow South must save her daughter from a fey offering impossible promises. And in the Hugo award-nominated short story \"The City Born Great,\" a young street kid fights to give birth to an old metropolis's soul.",
+              "note": "",
+              "links": []
+            },
+            {
+              "id": "young-adult-fantastic-worlds-2",
+              "headline": "The Princess Bride by William Goldman",
+              "title": "The Princess Bride",
+              "author": "William Goldman",
+              "recommender": "",
+              "meta": "",
+              "summary": "Set up as a frame story, this fantasy roman ce combines elements of comedy, adventure, fantasy, drama, romance, and fairy tale. Readers are transported to the world of Princess Buttercup, the Dread Pirate Roberts, and Rodents of Unusual Size with a narrator who only covers “the good parts” and adds interesting commentary along the way.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/the-princess-bride",
+                  "url": "https://www.commonsensemedia.org/book-reviews/the-princess-bride"
+                }
+              ]
+            },
+            {
+              "id": "young-adult-fantastic-worlds-3",
+              "headline": "Wings of Fire series by Tui Sutherland",
+              "title": "Wings of Fire series",
+              "author": "Tui Sutherland",
+              "recommender": "",
+              "meta": "",
+              "summary": "Wings of Fire is a series of fantasy novels written by Venezuelan-American author Tui T. Sutherland. The novels are set in the fictional dragon-inhabited continents of Pyrrhia and for the third arc Pantala, and chronicle the quests of young dragons to fulfill prophecies.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.commonsensemedia.org/book-reviews/the-dragonet-prophecy-wings-of-fire-book-1",
+                  "url": "https://www.commonsensemedia.org/book-reviews/the-dragonet-prophecy-wings-of-fire-book-1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "young-adult-identity-and-what-it-means-to-be-human",
+          "title": "Identity and what it means to be human",
+          "recommendations": [
+            {
+              "id": "young-adult-identity-and-what-it-means-to-be-human-1",
+              "headline": "The House on Mango Street by Sandra Cisneros",
+              "title": "The House on Mango Street",
+              "author": "Sandra Cisneros",
+              "recommender": "",
+              "meta": "",
+              "summary": "Acclaimed by critics, beloved by readers of all ages, taught everywhere from inner-city grade schools to universities across the country, and translated all over the world, The House on Mango Street is the remarkable story of Esperanza Cordero. Told in a series of vignettes – sometimes heartbreaking, sometimes deeply joyous–it is the story of a young Latina girl growing up in Chicago, inventing for herself who and what she will become. Few other books in our time have touched so many readers.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/book/show/139253.The_House_on_Mango_Street?from_search=true&qid=QzGNGqejzk&rank=1",
+                  "url": "https://www.goodreads.com/book/show/139253.The_House_on_Mango_Street?from_search=true&qid=QzGNGqejzk&rank=1"
+                }
+              ]
+            },
+            {
+              "id": "young-adult-identity-and-what-it-means-to-be-human-2",
+              "headline": "Everything, Everything by Nicola Yoon (recommended by Charlotte)",
+              "title": "Everything, Everything",
+              "author": "Nicola Yoon",
+              "recommender": "Charlotte",
+              "meta": "Recommended by Charlotte",
+              "summary": "Love is worth everything, eighteen-year-old Madeline sums up the novel The Little Prince in the book Everything, Everything by Nicola Loon. Madeline, like the main character in her favorite novel, decides to follow her heart even though it means she might lose her own life. She suffers with SCID, a rare condition characterized by a nearly nonexistent immune system, and has lived all of her life inside a controlled, sterile environment. When she has the chance to experience love, however, Madeline decides a chance at being alive is worth the risk she must take.",
+              "note": "",
+              "links": []
+            },
+            {
+              "id": "young-adult-identity-and-what-it-means-to-be-human-3",
+              "headline": "Never Let Me Go by Kazuo Ishiguro Never Let Me Go takes place in a dystopian version of late 1990s England, where the lives of ordinary citizens are prolonged through a state-sanctioned program of human cloning. The clones, referred to as students, grow up in special institutions away from the outside world. Set at Hailsham school, readers experience clone life through Kathy H.’s eyes. (recommended by Charlotte)",
+              "title": "Never Let Me Go",
+              "author": "Kazuo Ishiguro Never Let Me Go takes place in a dystopian version of late 1990s England, where the lives of ordinary citizens are prolonged through a state-sanctioned program of human cloning. The clones, referred to as students, grow up in special institutions away from the outside world. Set at Hailsham school, readers experience clone life through Kathy H.’s eyes.",
+              "recommender": "Charlotte",
+              "meta": "Recommended by Charlotte",
+              "summary": "",
+              "note": "",
+              "links": []
+            },
+            {
+              "id": "young-adult-identity-and-what-it-means-to-be-human-4",
+              "headline": "Life of Pi by Yann Martel",
+              "title": "Life of Pi",
+              "author": "Yann Martel",
+              "recommender": "",
+              "meta": "",
+              "summary": "On the surface, this is the story of a young man named Pi who survives a harrowing shipwreck and months in a lifeboat with a large Bengal tiger named Richard Parker. Dig deeper into the philosophical meaning of the text as Pi explores the nature of religion, story-telling, and what it means to be human.",
+              "note": "",
+              "links": [
+                {
+                  "label": "https://www.goodreads.com/book/show/4214.Life_of_Pi",
+                  "url": "https://www.goodreads.com/book/show/4214.Life_of_Pi"
+                }
+              ]
+            },
+            {
+              "id": "young-adult-identity-and-what-it-means-to-be-human-5",
+              "headline": "Hot Dog Girl by Jennifer Dugan (recommended by Alexis)",
+              "title": "Hot Dog Girl",
+              "author": "Jennifer Dugan",
+              "recommender": "Alexis",
+              "meta": "Recommended by Alexis",
+              "summary": "It’s the summer between Junior and Senior year, and Elouise (Lou) Parker is determined to make this the most epic summer ever. And it would be if the world weren’t trying to ruin her plans. Instead she’s stuck playing the Hot Dog at Magic Castle (her favorite place in the whole world), her crush Nick is dating the Princess, and Magic Castle is closing at the end of the summer. But you better believe Lou is gonna do everything she can to turn this summer around.",
+              "note": "",
+              "links": []
+            },
+            {
+              "id": "young-adult-identity-and-what-it-means-to-be-human-6",
+              "headline": "Not Your Sidekick (Sidekick Squad book 1) by C.B. Lee (recommended by Alexis)",
+              "title": "Not Your Sidekick (Sidekick Squad book 1)",
+              "author": "C.B. Lee",
+              "recommender": "Alexis",
+              "meta": "Recommended by Alexis",
+              "summary": "Jess is your typical high school girl. She’s got a crush on Abby, captain of the Volleyball team. She’s got two best friends and an annoying little brother. Oh yeah, and her parents are superheroes. But Jess did not get any superpowers, so instead, she’s got to find an internship. And when she gets an offer for a paid(!) internship at the same company as Abby, it’s too good to pass up. So she accepts, even after she finds out the internship is working for her parents’ arch-nemesis. What could go wrong?",
+              "note": "",
+              "links": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "teacherPicks": [
+    {
+      "id": "ambassador-deanne-hokanson-bostrom",
+      "name": "Ambassador Deanne Hokanson Bostrom",
+      "picks": [
+        "Insignificant Events in the Life of a Cactus",
+        "Holes",
+        "Wildfire",
+        "Focused",
+        "Hoot",
+        "Harry Potter",
+        "Rules",
+        "Any riordan books"
+      ],
+      "resource": null
+    },
+    {
+      "id": "ambassador-jenna-elizabeth",
+      "name": "Ambassador Jenna Elizabeth",
+      "picks": [
+        "The Unwanteds Series!",
+        "Roald Dahl books",
+        "Weird School for lower/middle elementary kids",
+        "Percy Jackson Series",
+        "Wonder",
+        "The Land of Stories Series"
+      ],
+      "resource": null
+    },
+    {
+      "id": "ambassador-michelle-rossi",
+      "name": "Ambassador Michelle Rossi",
+      "picks": [
+        "A Wrinkle in Time graphic novel"
+      ],
+      "resource": null
+    },
+    {
+      "id": "ambassador-marci-sudler-abramowitz",
+      "name": "Ambassador Marci Sudler-Abramowitz",
+      "picks": [
+        "The Giver",
+        "Wonder",
+        "Bridge to Terabitha",
+        "Define Normal",
+        "Flipped"
+      ],
+      "resource": null
+    },
+    {
+      "id": "ambassador-sarah-wilber",
+      "name": "Ambassador Sarah Wilber",
+      "picks": [
+        "The Land of Stories",
+        "The Wild Robot"
+      ],
+      "resource": null
+    },
+    {
+      "id": "ambassador-dawn-schipper",
+      "name": "Ambassador Dawn Schipper",
+      "picks": [
+        "Middle school: Hunger Games",
+        "A Long Walk to Water",
+        "The Wild Robot"
+      ],
+      "resource": null
+    },
+    {
+      "id": "ambassador-tim-vandenberg-recommended-this-list-school-library-journal-top-100-chapter-books",
+      "name": "Ambassador Tim Vandenberg",
+      "picks": [],
+      "resource": {
+        "label": "School Library Journal - Top 100 Chapter Books",
+        "url": "http://blogs.slj.com/afuse8production/2012/07/07/top-100-chapter-book-poll-results/?fbclid=IwAR2LAkWVEr5SLt49TWgyZ7edz3fDBhDld03BcLdrzds5hYPNEGF-40zAvYA"
+      }
+    }
+  ]
+}
