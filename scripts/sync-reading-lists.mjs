@@ -6,6 +6,100 @@ import { load } from "cheerio";
 const SOURCE_URL =
   "https://docs.google.com/document/d/e/2PACX-1vSdvMDG0MOOM-RLv-lG3hd3F18Vcnq-fqSMxkvBZZDccUJrMiU3fiP89uVtXRAZ5wRlWH0l_Ymwhki7/pub?embedded=true";
 const OUTPUT_PATH = resolve("src/data/recommendations.json");
+const COVER_CACHE_PATH = resolve("scripts/cover-cache.json");
+
+function normalizeSearchValue(value = "") {
+  return normalizeText(value)
+    .normalize("NFKD")
+    .replace(/\p{Mark}+/gu, "")
+    .replace(/[’']/g, "")
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/gi, " ")
+    .trim()
+    .toLowerCase();
+}
+
+const COVER_QUERY_OVERRIDES = new Map(
+  Object.entries({
+    "Anything by Dr. Seuss!": {
+      title: "The Cat in the Hat",
+      author: "Dr. Seuss",
+    },
+    "Charlie Cook’s Favorite Book (and many others)": {
+      title: "Charlie Cook's Favourite Book",
+      author: "Julia Donaldson",
+    },
+    "Any of the Ada Twist Scientist, Iggy Peck Architect series": {
+      title: "Ada Twist, Scientist",
+      author: "Andrea Beaty",
+    },
+    "Little Doctor and the Fearless Beast": {
+      title: "Little Doctor and the Fearless Beast",
+      author: "Sophie Gilmore",
+    },
+    "National Geographic Kids books, especially the “ Weird but True ” series": {
+      title: "Weird but True!",
+      author: "National Geographic Kids",
+    },
+    "Hilo: The Boy Who Crashed to Earth": {
+      title: "Hilo",
+      author: "Judd Winick",
+    },
+    "The Little Prince": {
+      query: "The Little Prince Antoine de Saint-Exupéry",
+      title: "The Little Prince",
+      author: "Antoine de Saint-Exupéry",
+    },
+    "Magic Treehouse series": {
+      title: "Magic Tree House",
+      author: "Mary Pope Osborne",
+    },
+    "Anything by Roald Dahl!": {
+      title: "Charlie and the Chocolate Factory",
+      author: "Roald Dahl",
+    },
+    "Seymour and Hau series": {
+      title: "The Adventures of Seymour and Hau",
+      author: "Melanie Morse",
+    },
+    "I Survived series": {
+      title: "I Survived the Sinking of the Titanic, 1912",
+      author: "Lauren Tarshis",
+    },
+    "Mr Lemoncello’s Library series": {
+      title: "Escape from Mr. Lemoncello's Library",
+      author: "Chris Grabenstein",
+    },
+    "The Truly Devious series": {
+      title: "Truly Devious",
+      author: "Maureen Johnson",
+    },
+    "Summoner series": {
+      title: "The Novice",
+      author: "Taran Matharu",
+    },
+    "Six of Crows and Crooked Kingdom": {
+      title: "Six of Crows",
+      author: "Leigh Bardugo",
+    },
+    "Wings of Fire series": {
+      title: "The Dragonet Prophecy",
+      author: "Tui T. Sutherland",
+    },
+    "Flora and Ulysses (or almost anything": {
+      title: "Flora & Ulysses",
+      author: "Kate DiCamillo",
+    },
+    Want: {
+      title: "Want",
+      author: "Cindy Pon",
+    },
+    "Never Let Me Go": {
+      title: "Never Let Me Go",
+      author: "Kazuo Ishiguro",
+    },
+  }).map(([key, value]) => [normalizeSearchValue(key), value]),
+);
 
 function normalizeText(value = "") {
   return value.replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim();
@@ -16,6 +110,376 @@ function slugify(value) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+}
+
+function dedupe(values) {
+  return [...new Set(values.filter(Boolean))];
+}
+
+function getCoverOverride(recommendation) {
+  return (
+    COVER_QUERY_OVERRIDES.get(normalizeSearchValue(recommendation.title)) ||
+    COVER_QUERY_OVERRIDES.get(normalizeSearchValue(recommendation.headline)) ||
+    null
+  );
+}
+
+function cleanCoverTitle(title = "") {
+  return normalizeText(
+    title
+      .replace(/[“”]/g, '"')
+      .replace(/^anything by\s+/i, "")
+      .replace(/^any of the\s+/i, "")
+      .replace(/^1st book is\s+/i, "")
+      .replace(/\([^)]*\)/g, "")
+      .replace(/\s+\(and many others.*$/i, "")
+      .replace(/\s+\(and others.*$/i, "")
+      .replace(/\s+\(or almost anything.*$/i, "")
+      .replace(/\bseries\b/gi, "")
+      .replace(/\s+-\s*$/g, "")
+      .replace(/\)\s*$/g, "")
+      .replace(/\s{2,}/g, " "),
+  );
+}
+
+function getCoverTitleCandidates(recommendation) {
+  const override = getCoverOverride(recommendation);
+  if (override?.title) {
+    return [override.title];
+  }
+
+  const rawTitle = recommendation.title || recommendation.headline;
+  const cleanedTitle = cleanCoverTitle(rawTitle);
+  const variants = [
+    cleanedTitle,
+    cleanedTitle.replace(/:.+$/, ""),
+    cleanedTitle.replace(/\/.+$/, ""),
+    cleanedTitle.split(",").at(-1) ?? "",
+  ];
+
+  if (/National Geographic Kids books/i.test(rawTitle)) {
+    variants.push("Weird but True!");
+  }
+
+  if (/Flora and Ulysses/i.test(rawTitle)) {
+    variants.push("Flora & Ulysses");
+  }
+
+  return dedupe(variants.map((value) => normalizeText(value)).filter(Boolean));
+}
+
+function getCoverAuthorCandidates(recommendation) {
+  const override = getCoverOverride(recommendation);
+  if (override?.author) {
+    return [override.author];
+  }
+
+  const cleanAuthor = normalizeText(recommendation.author)
+    .replace(/\s*(?:\)|\.)+\s*$/g, "")
+    .replace(/\s+(With|These|This|When|A|An)\b.*$/i, "")
+    .replace(/,$/, "")
+    .trim();
+
+  const variants = [
+    cleanAuthor,
+    cleanAuthor.split(",")[0] ?? "",
+    cleanAuthor.match(/^([\p{L}.'’\-]+(?:\s+[\p{L}.'’\-]+){0,3})/u)?.[1] ?? "",
+  ];
+
+  return dedupe(variants.map((value) => normalizeText(value)));
+}
+
+function createCoverCacheKey(recommendation) {
+  return normalizeSearchValue(
+    `${recommendation.title} ${recommendation.author} ${recommendation.headline}`,
+  );
+}
+
+function addCoverSearchCandidate(candidates, candidate) {
+  const key = JSON.stringify(candidate);
+  if (candidate.title || candidate.q) {
+    candidates.set(key, candidate);
+  }
+}
+
+function getCoverSearchCandidates(recommendation) {
+  const override = getCoverOverride(recommendation);
+  const titleCandidates = getCoverTitleCandidates(recommendation).slice(0, 4);
+  const authorCandidates = getCoverAuthorCandidates(recommendation);
+  const primaryAuthor = authorCandidates[0] ?? "";
+  const candidates = new Map();
+
+  if (override?.query) {
+    addCoverSearchCandidate(candidates, {
+      q: override.query,
+      title: override.title ?? recommendation.title,
+      author: override.author ?? primaryAuthor,
+    });
+  }
+
+  for (const title of titleCandidates) {
+    if (primaryAuthor) {
+      addCoverSearchCandidate(candidates, { title, author: primaryAuthor });
+      addCoverSearchCandidate(candidates, {
+        q: `${title} ${primaryAuthor}`,
+        title,
+        author: primaryAuthor,
+      });
+    }
+    addCoverSearchCandidate(candidates, { title });
+  }
+
+  return [...candidates.values()].slice(0, 6);
+}
+
+function getSharedTokenScore(left = "", right = "") {
+  const leftTokens = new Set(
+    normalizeSearchValue(left)
+      .split(" ")
+      .filter((token) => token.length > 2),
+  );
+  const rightTokens = new Set(
+    normalizeSearchValue(right)
+      .split(" ")
+      .filter((token) => token.length > 2),
+  );
+
+  if (leftTokens.size === 0 || rightTokens.size === 0) {
+    return 0;
+  }
+
+  let sharedCount = 0;
+  for (const token of leftTokens) {
+    if (rightTokens.has(token)) {
+      sharedCount += 1;
+    }
+  }
+
+  if (sharedCount === 0) {
+    return 0;
+  }
+
+  let score = sharedCount * 4;
+  if (sharedCount === Math.min(leftTokens.size, rightTokens.size)) {
+    score += 6;
+  }
+
+  return score;
+}
+
+function scoreCoverDocument(document, candidate) {
+  const documentTitle = normalizeSearchValue(document.title);
+  const documentAuthors = normalizeSearchValue((document.author_name ?? []).join(" "));
+  const candidateTitle = normalizeSearchValue(candidate.title);
+  const candidateAuthor = normalizeSearchValue(candidate.author);
+  let score = 0;
+
+  if (candidateTitle) {
+    if (documentTitle === candidateTitle) {
+      score += 28;
+    } else if (
+      documentTitle.startsWith(candidateTitle) ||
+      candidateTitle.startsWith(documentTitle)
+    ) {
+      score += 18;
+    } else if (
+      documentTitle.includes(candidateTitle) ||
+      candidateTitle.includes(documentTitle)
+    ) {
+      score += 10;
+    }
+
+    score += getSharedTokenScore(documentTitle, candidateTitle);
+  }
+
+  if (candidateAuthor) {
+    if (documentAuthors === candidateAuthor) {
+      score += 16;
+    } else if (
+      documentAuthors.includes(candidateAuthor) ||
+      candidateAuthor.includes(documentAuthors)
+    ) {
+      score += 10;
+    }
+
+    score += getSharedTokenScore(documentAuthors, candidateAuthor);
+  }
+
+  if (document.cover_i || document.cover_edition_key) {
+    score += 12;
+  }
+
+  if (document.first_publish_year) {
+    score += 2;
+  }
+
+  if (/\b(workbook|guide|lesson plan|teachers? guide|student workbook)\b/.test(documentTitle)) {
+    score -= 18;
+  }
+
+  return score;
+}
+
+function getOpenLibraryCoverUrl(document) {
+  if (document.cover_edition_key) {
+    return `https://covers.openlibrary.org/b/olid/${document.cover_edition_key}-L.jpg?default=false`;
+  }
+
+  if (document.cover_i) {
+    return `https://covers.openlibrary.org/b/id/${document.cover_i}-L.jpg?default=false`;
+  }
+
+  return "";
+}
+
+function getOpenLibraryPageUrl(document) {
+  if (document.cover_edition_key) {
+    return `https://openlibrary.org/books/${document.cover_edition_key}`;
+  }
+
+  if (document.key) {
+    return `https://openlibrary.org${document.key}`;
+  }
+
+  return "https://openlibrary.org";
+}
+
+async function searchOpenLibrary(candidate) {
+  const url = new URL("https://openlibrary.org/search.json");
+
+  if (candidate.q) {
+    url.searchParams.set("q", candidate.q);
+  } else if (candidate.title) {
+    url.searchParams.set("title", candidate.title);
+    if (candidate.author) {
+      url.searchParams.set("author", candidate.author);
+    }
+  } else {
+    return [];
+  }
+
+  url.searchParams.set(
+    "fields",
+    "title,author_name,cover_i,cover_edition_key,key,edition_key,first_publish_year",
+  );
+  url.searchParams.set("limit", "6");
+
+  let lastError = null;
+
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    const response = await fetch(url);
+    if (response.ok) {
+      const payload = await response.json();
+      return payload.docs ?? [];
+    }
+
+    lastError = new Error(`Open Library search failed with ${response.status}`);
+    if (response.status < 500 && response.status !== 429) {
+      throw lastError;
+    }
+
+    await new Promise((resolveDelay) =>
+      setTimeout(resolveDelay, 300 * (attempt + 1)),
+    );
+  }
+
+  throw lastError ?? new Error("Open Library search failed");
+}
+
+async function loadCoverCache() {
+  try {
+    const existing = await readFile(COVER_CACHE_PATH, "utf8");
+    return JSON.parse(existing);
+  } catch {
+    return {};
+  }
+}
+
+async function writeCoverCache(cache) {
+  await mkdir(dirname(COVER_CACHE_PATH), { recursive: true });
+  await writeFile(COVER_CACHE_PATH, `${JSON.stringify(cache, null, 2)}\n`);
+}
+
+async function resolveRecommendationCover(recommendation, cache) {
+  const cacheKey = createCoverCacheKey(recommendation);
+  if (cacheKey in cache) {
+    return cache[cacheKey];
+  }
+
+  let bestMatch = null;
+
+  for (const candidate of getCoverSearchCandidates(recommendation)) {
+    const documents = await searchOpenLibrary(candidate);
+    for (const document of documents) {
+      if (!(document.cover_i || document.cover_edition_key)) {
+        continue;
+      }
+
+      const score = scoreCoverDocument(document, candidate);
+      if (!bestMatch || score > bestMatch.score) {
+        bestMatch = { score, document };
+      }
+    }
+  }
+
+  if (!bestMatch) {
+    cache[cacheKey] = null;
+    return null;
+  }
+
+  const cover = {
+    imageUrl: getOpenLibraryCoverUrl(bestMatch.document),
+    pageUrl: getOpenLibraryPageUrl(bestMatch.document),
+    title: normalizeText(bestMatch.document.title || recommendation.title),
+    author: normalizeText((bestMatch.document.author_name ?? []).join(", ")),
+    source: "Open Library",
+  };
+
+  cache[cacheKey] = cover;
+  return cover;
+}
+
+async function mapWithConcurrency(items, limit, callback) {
+  let currentIndex = 0;
+
+  async function worker() {
+    while (currentIndex < items.length) {
+      const item = items[currentIndex];
+      currentIndex += 1;
+      await callback(item);
+    }
+  }
+
+  await Promise.all(
+    Array.from({ length: Math.min(limit, items.length) }, () => worker()),
+  );
+}
+
+async function enrichPayloadWithCovers(payload) {
+  const cache = await loadCoverCache();
+  const recommendations = payload.ageGroups.flatMap((ageGroup) =>
+    ageGroup.themes.flatMap((theme) => theme.recommendations),
+  );
+  let resolvedCount = 0;
+
+  await mapWithConcurrency(recommendations, 6, async (recommendation) => {
+    try {
+      const cover = await resolveRecommendationCover(recommendation, cache);
+      if (cover) {
+        recommendation.cover = cover;
+        resolvedCount += 1;
+      }
+    } catch (error) {
+      console.warn(
+        `Cover lookup failed for "${recommendation.title}": ${
+          error instanceof Error ? error.message : error
+        }`,
+      );
+    }
+  });
+
+  await writeCoverCache(cache);
+  console.log(`Resolved ${resolvedCount} cover images from Open Library`);
 }
 
 function unwrapGoogleRedirect(href = "") {
@@ -670,6 +1134,7 @@ async function main() {
   try {
     const html = await fetchDocument();
     const payload = parseDocument(html);
+    await enrichPayloadWithCovers(payload);
     await writePayload(payload);
     console.log(`Synced reading lists to ${OUTPUT_PATH}`);
   } catch (error) {

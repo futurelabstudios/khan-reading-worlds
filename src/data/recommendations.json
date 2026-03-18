@@ -1,6 +1,6 @@
 {
   "sourceUrl": "https://docs.google.com/document/d/e/2PACX-1vSdvMDG0MOOM-RLv-lG3hd3F18Vcnq-fqSMxkvBZZDccUJrMiU3fiP89uVtXRAZ5wRlWH0l_Ymwhki7/pub",
-  "syncedAt": "2026-03-18T18:40:16.878Z",
+  "syncedAt": "2026-03-18T18:56:29.332Z",
   "intro": "Books that children will not want to put down, organized by age band, mood, and reading adventure.",
   "ageGroups": [
     {
@@ -25,7 +25,14 @@
                   "label": "https://www.amazon.com/Most-Magnificent-Thing-Ashley-Spires/dp/1554537045",
                   "url": "https://www.amazon.com/Most-Magnificent-Thing-Ashley-Spires/dp/1554537045"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL26471349M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL26471349M",
+                "title": "The Most Magnificent Thing",
+                "author": "Ashley Spires",
+                "source": "Open Library"
+              }
             },
             {
               "id": "picture-books-by-topic-try-try-again-2",
@@ -41,7 +48,14 @@
                   "label": "https://www.goodreads.com/book/show/824204.The_Little_Engine_That_Could",
                   "url": "https://www.goodreads.com/book/show/824204.The_Little_Engine_That_Could"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL7762437M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL7762437M",
+                "title": "The Little Engine That Could",
+                "author": "Watty Piper",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -63,7 +77,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/the-snowy-day",
                   "url": "https://www.commonsensemedia.org/book-reviews/the-snowy-day"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL59041471M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL59041471M",
+                "title": "The snowy day",
+                "author": "Ezra jack keats",
+                "source": "Open Library"
+              }
             },
             {
               "id": "picture-books-by-topic-snow-day-adventures-2",
@@ -79,7 +100,14 @@
                   "label": "https://www.amazon.com/Snowball-Moon-Fran-Cannon-Slayton/dp/1499804954",
                   "url": "https://www.amazon.com/Snowball-Moon-Fran-Cannon-Slayton/dp/1499804954"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL32268532M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL32268532M",
+                "title": "Snowball moon",
+                "author": "Fran Cannon Slayton",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -101,7 +129,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/harold-and-the-purple-crayon",
                   "url": "https://www.commonsensemedia.org/book-reviews/harold-and-the-purple-crayon"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL7291978M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL7291978M",
+                "title": "Harold and the Purple Crayon",
+                "author": "Crockett Johnson",
+                "source": "Open Library"
+              }
             },
             {
               "id": "picture-books-by-topic-imagination-creating-your-own-world-2",
@@ -117,7 +152,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/extra-yarn",
                   "url": "https://www.commonsensemedia.org/book-reviews/extra-yarn"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL25184324M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL25184324M",
+                "title": "Extra yarn",
+                "author": "Mac Barnett",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -139,7 +181,14 @@
                   "label": "https://www.amazon.com/gp/bookseries/B01N2QOH0P/ref=dp_st_0892392738",
                   "url": "https://www.amazon.com/gp/bookseries/B01N2QOH0P/ref=dp_st_0892392738"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL24847592M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL24847592M",
+                "title": "Marisol McDonald doesn't match",
+                "author": "Monica Brown",
+                "source": "Open Library"
+              }
             },
             {
               "id": "picture-books-by-topic-free-to-be-me-2",
@@ -155,7 +204,14 @@
                   "label": "https://www.amazon.com/Lucia-Luchadora-Cynthia-Leonor-Garza/dp/1576878279",
                   "url": "https://www.amazon.com/Lucia-Luchadora-Cynthia-Leonor-Garza/dp/1576878279"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL27233963M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL27233963M",
+                "title": "Lucia the luchadora",
+                "author": "Cynthia Leonor Garza",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -177,7 +233,14 @@
                   "label": "https://www.goodreads.com/book/show/169960.Henry_the_Buccaneer_Bunnies",
                   "url": "https://www.goodreads.com/book/show/169960.Henry_the_Buccaneer_Bunnies"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL8036365M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL8036365M",
+                "title": "Henry and the Buccaneer Bunnies",
+                "author": "Carolyn Crimi",
+                "source": "Open Library"
+              }
             },
             {
               "id": "picture-books-by-topic-adventures-in-reading-2",
@@ -193,7 +256,14 @@
                   "label": "https://www.goodreads.com/book/show/983045.Charlie_Cook_s_Favorite_Book",
                   "url": "https://www.goodreads.com/book/show/983045.Charlie_Cook_s_Favorite_Book"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/id/575603-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/works/OL1938186W",
+                "title": "Charlie Cook's favourite book",
+                "author": "Julia Donaldson",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -215,7 +285,14 @@
                   "label": "https://www.goodreads.com/book/show/20821299-the-book-with-no-pictures",
                   "url": "https://www.goodreads.com/book/show/20821299-the-book-with-no-pictures"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL25632206M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL25632206M",
+                "title": "The Book with No Pictures",
+                "author": "B. J. Novak",
+                "source": "Open Library"
+              }
             },
             {
               "id": "picture-books-by-topic-sillies-giggles-and-overall-fun-2",
@@ -231,7 +308,14 @@
                   "label": "http://bedtimemath.org/books/",
                   "url": "http://bedtimemath.org/books/"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL27179522M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL27179522M",
+                "title": "Bedtime math",
+                "author": "Laura Overdeck",
+                "source": "Open Library"
+              }
             },
             {
               "id": "picture-books-by-topic-sillies-giggles-and-overall-fun-3",
@@ -247,7 +331,14 @@
                   "label": "https://www.commonsensemedia.org/search/dr%20seuss?f%5B0%5D=field_reference_review_ent_prod%253Atype%3Acsm_book",
                   "url": "https://www.commonsensemedia.org/search/dr%20seuss?f%5B0%5D=field_reference_review_ent_prod%253Atype%3Acsm_book"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL9217441M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL9217441M",
+                "title": "The Cat in the Hat",
+                "author": "Dr. Seuss, Simon Mugford",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -269,7 +360,14 @@
                   "label": "https://www.amazon.com/Ada-Twist-Scientist-Andrea-Beaty/dp/1419721372",
                   "url": "https://www.amazon.com/Ada-Twist-Scientist-Andrea-Beaty/dp/1419721372"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL26218764M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL26218764M",
+                "title": "Ada Twist, Scientist",
+                "author": "Andrea Beaty",
+                "source": "Open Library"
+              }
             },
             {
               "id": "picture-books-by-topic-fact-finding-missions-and-science-stories-2",
@@ -285,7 +383,14 @@
                   "label": "https://www.amazon.com/Little-Doctor-Fearless-Sophie-Gilmore/dp/1771473444",
                   "url": "https://www.amazon.com/Little-Doctor-Fearless-Sophie-Gilmore/dp/1771473444"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL27338832M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL27338832M",
+                "title": "Little Doctor and the Fearless Beast",
+                "author": "Sophie Gilmore",
+                "source": "Open Library"
+              }
             },
             {
               "id": "picture-books-by-topic-fact-finding-missions-and-science-stories-3",
@@ -301,7 +406,14 @@
                   "label": "https://www.goodreads.com/book/show/7159818-weird-but-true?from_search=true&qid=RHVqX8OJPs&rank=11",
                   "url": "https://www.goodreads.com/book/show/7159818-weird-but-true?from_search=true&qid=RHVqX8OJPs&rank=11"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL27191738M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL27191738M",
+                "title": "Weird but true!",
+                "author": "National Geographic Kids",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -323,7 +435,14 @@
                   "label": "https://www.goodreads.com/book/show/867248.Bear_Snores_On",
                   "url": "https://www.goodreads.com/book/show/867248.Bear_Snores_On"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL8457754M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL8457754M",
+                "title": "Bear snores on",
+                "author": "Karma Wilson, Jane Chapman",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -345,7 +464,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/zita-the-spacegirl",
                   "url": "https://www.commonsensemedia.org/book-reviews/zita-the-spacegirl"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL24599808M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL24599808M",
+                "title": "Zita the Spacegirl",
+                "author": "Ben Hatke",
+                "source": "Open Library"
+              }
             },
             {
               "id": "picture-books-by-topic-interplanetary-visitors-2",
@@ -361,7 +487,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/hilo-the-boy-who-crashed-to-earth-hilo-book-1",
                   "url": "https://www.commonsensemedia.org/book-reviews/hilo-the-boy-who-crashed-to-earth-hilo-book-1"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL27444907M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL27444907M",
+                "title": "Hilo",
+                "author": "Judd Winick",
+                "source": "Open Library"
+              }
             },
             {
               "id": "picture-books-by-topic-interplanetary-visitors-3",
@@ -377,7 +510,14 @@
                   "label": "https://www.goodreads.com/book/show/157993.The_Little_Prince",
                   "url": "https://www.goodreads.com/book/show/157993.The_Little_Prince"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL32091859M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL32091859M",
+                "title": "A day with the little prince",
+                "author": "Antoine de Saint-Exupéry",
+                "source": "Open Library"
+              }
             }
           ]
         }
@@ -405,7 +545,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/encyclopedia-brown-series",
                   "url": "https://www.commonsensemedia.org/book-reviews/encyclopedia-brown-series"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL13548769M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL13548769M",
+                "title": "Encyclopedia Brown, Boy Detective",
+                "author": "Donald J. Sobol",
+                "source": "Open Library"
+              }
             },
             {
               "id": "chapter-books-detectives-on-the-case-2",
@@ -421,7 +568,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/from-the-mixed-up-files-of-mrs-basil-e-frankweiler",
                   "url": "https://www.commonsensemedia.org/book-reviews/from-the-mixed-up-files-of-mrs-basil-e-frankweiler"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL8136979M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL8136979M",
+                "title": "From the Mixed-Up Files of Mrs. Basil E. Frankweiler",
+                "author": "E. L. Konigsburg, Jill Clayburgh",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -443,7 +597,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/magic-tree-house-series",
                   "url": "https://www.commonsensemedia.org/book-reviews/magic-tree-house-series"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL7946057M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL7946057M",
+                "title": "Magic Tree House",
+                "author": "Mary Pope Osborne",
+                "source": "Open Library"
+              }
             },
             {
               "id": "chapter-books-magical-missions-and-intergalactic-adventures-2",
@@ -459,7 +620,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/the-13-story-treehouse-the-treehouse-books-book-1",
                   "url": "https://www.commonsensemedia.org/book-reviews/the-13-story-treehouse-the-treehouse-books-book-1"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL32012805M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL32012805M",
+                "title": "13-Story Treehouse",
+                "author": "Andy Griffiths, Terry Denton",
+                "source": "Open Library"
+              }
             },
             {
               "id": "chapter-books-magical-missions-and-intergalactic-adventures-3",
@@ -475,7 +643,14 @@
                   "label": "https://rarestkindofbest.com/2011/10/04/a-roald-dahl-reading-list/",
                   "url": "https://rarestkindofbest.com/2011/10/04/a-roald-dahl-reading-list/"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL5883038M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL5883038M",
+                "title": "Charlie and the Chocolate Factory",
+                "author": "Roald Dahl",
+                "source": "Open Library"
+              }
             },
             {
               "id": "chapter-books-magical-missions-and-intergalactic-adventures-4",
@@ -507,7 +682,14 @@
                   "label": "https://www.goodreads.com/series/99705",
                   "url": "https://www.goodreads.com/series/99705"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL27727824M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL27727824M",
+                "title": "Galaxy Zack",
+                "author": "Ray O'Ryan",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -529,7 +711,14 @@
                   "label": "https://www.bettybirney.com/humphrey.html",
                   "url": "https://www.bettybirney.com/humphrey.html"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL3673356M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL3673356M",
+                "title": "The world according to Humphrey",
+                "author": "Betty G. Birney",
+                "source": "Open Library"
+              }
             },
             {
               "id": "chapter-books-through-the-eyes-of-animals-2",
@@ -545,7 +734,14 @@
                   "label": "https://www.goodreads.com/book/show/30254993-game-over-super-rabbit-boy",
                   "url": "https://www.goodreads.com/book/show/30254993-game-over-super-rabbit-boy"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL28218810M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL28218810M",
+                "title": "Press Start!",
+                "author": "Thomas Flintham",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -567,7 +763,14 @@
                   "label": "https://www.goodreads.com/book/show/289440.Dear_Max",
                   "url": "https://www.goodreads.com/book/show/289440.Dear_Max"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL3425990M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL3425990M",
+                "title": "Dear Max",
+                "author": "Sally Grindley",
+                "source": "Open Library"
+              }
             },
             {
               "id": "chapter-books-honing-your-craft-2",
@@ -583,7 +786,14 @@
                   "label": "https://www.goodreads.com/series/131336",
                   "url": "https://www.goodreads.com/series/131336"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL37820376M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL37820376M",
+                "title": "Jedi Academy",
+                "author": "Jeffrey Brown",
+                "source": "Open Library"
+              }
             }
           ]
         }
@@ -606,7 +816,14 @@
               "meta": "",
               "summary": "A deeply goofy, heartfelt allegory about knowledge. Milo is a sullen boy who doesn't really get the point of learning. One day, a large toy car and a tollbooth appear in his bedroom, and on a whim, Milo decides to place a nickel in the tollbooth and drive through. (Recommended by David Rheinstrom; look for the edition illustrated by Jules Feiffer)",
               "note": "",
-              "links": []
+              "links": [],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL17148283M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL17148283M",
+                "title": "The Phantom Tollbooth",
+                "author": "Norton Juster",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -628,7 +845,14 @@
                   "label": "https://www.goodreads.com/book/show/2584352-the-order-of-odd-fish",
                   "url": "https://www.goodreads.com/book/show/2584352-the-order-of-odd-fish"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL24090640M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL24090640M",
+                "title": "The Order of Odd-Fish",
+                "author": "James Kennedy",
+                "source": "Open Library"
+              }
             },
             {
               "id": "middle-grade-readers-between-the-ages-of-8-and-12-fantasy-secret-powers-and-destiny-2",
@@ -644,7 +868,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/the-girl-who-drank-the-moon",
                   "url": "https://www.commonsensemedia.org/book-reviews/the-girl-who-drank-the-moon"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL26233073M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL26233073M",
+                "title": "The Girl Who Drank the Moon",
+                "author": "Kelly Regan Barnhill",
+                "source": "Open Library"
+              }
             },
             {
               "id": "middle-grade-readers-between-the-ages-of-8-and-12-fantasy-secret-powers-and-destiny-3",
@@ -660,7 +891,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/septimus-heap-series",
                   "url": "https://www.commonsensemedia.org/book-reviews/septimus-heap-series"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL7962674M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL7962674M",
+                "title": "Magyk (Septimus Heap)",
+                "author": "Angie Sage, angie sage, Angie SAGE, Angie Sage",
+                "source": "Open Library"
+              }
             },
             {
               "id": "middle-grade-readers-between-the-ages-of-8-and-12-fantasy-secret-powers-and-destiny-4",
@@ -676,7 +914,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/redwall-redwall-book-1",
                   "url": "https://www.commonsensemedia.org/book-reviews/redwall-redwall-book-1"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL10099654M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL10099654M",
+                "title": "Redwall",
+                "author": "Brian Jacques",
+                "source": "Open Library"
+              }
             },
             {
               "id": "middle-grade-readers-between-the-ages-of-8-and-12-fantasy-secret-powers-and-destiny-5",
@@ -692,7 +937,14 @@
                   "label": "https://www.commonsensemedia.org/lists/harry-potter-book-series",
                   "url": "https://www.commonsensemedia.org/lists/harry-potter-book-series"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL26378158M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL26378158M",
+                "title": "Harry Potter and the Deathly Hallows",
+                "author": "J. K. Rowling",
+                "source": "Open Library"
+              }
             },
             {
               "id": "middle-grade-readers-between-the-ages-of-8-and-12-fantasy-secret-powers-and-destiny-6",
@@ -708,7 +960,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/fablehaven-fablehaven-series-book-1",
                   "url": "https://www.commonsensemedia.org/book-reviews/fablehaven-fablehaven-series-book-1"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL26333400M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL26333400M",
+                "title": "Fablehaven",
+                "author": "Brandon Mull",
+                "source": "Open Library"
+              }
             },
             {
               "id": "middle-grade-readers-between-the-ages-of-8-and-12-fantasy-secret-powers-and-destiny-7",
@@ -719,7 +978,14 @@
               "meta": "Recommended by Alexis",
               "summary": "Min, a 13-year-old shapeshifting fox spirit, lives with her family on the dust-ridden and impoverished planet Jinju. And Min is counting down the day until she can join the Space Forces just like her older brother Jun, and see more of the Thousand Worlds. But when word reaches their family that Jun has gone missing and is suspected of deserting to find the Dragon Pearl, she decides that she’s done waiting and sets out to find her brother so she can clear his name.",
               "note": "",
-              "links": []
+              "links": [],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL27330640M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL27330640M",
+                "title": "Dragon Pearl",
+                "author": "Yoon Ha Lee",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -741,7 +1007,14 @@
                   "label": "https://www.goodreads.com/series/50904",
                   "url": "https://www.goodreads.com/series/50904"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/id/6507023-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/works/OL3481232W",
+                "title": "The great brain",
+                "author": "John Dennis Fitzgerald",
+                "source": "Open Library"
+              }
             },
             {
               "id": "middle-grade-readers-between-the-ages-of-8-and-12-mischief-and-hijinks-2",
@@ -757,7 +1030,14 @@
                   "label": "https://www.goodreads.com/book/show/1385221.Sea_Legs",
                   "url": "https://www.goodreads.com/book/show/1385221.Sea_Legs"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL3681348M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL3681348M",
+                "title": "Sea Legs",
+                "author": "Alex Shearer",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -779,7 +1059,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/escape-from-mr-lemoncellos-library-mr-lemoncellos-library-book-1",
                   "url": "https://www.commonsensemedia.org/book-reviews/escape-from-mr-lemoncellos-library-mr-lemoncellos-library-book-1"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL25435793M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL25435793M",
+                "title": "Escape From Mr. Lemoncello's Library",
+                "author": "Chris Grabenstein",
+                "source": "Open Library"
+              }
             },
             {
               "id": "middle-grade-readers-between-the-ages-of-8-and-12-accepting-the-challenge-2",
@@ -795,7 +1082,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/esperanza-rising",
                   "url": "https://www.commonsensemedia.org/book-reviews/esperanza-rising"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL6779495M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL6779495M",
+                "title": "Esperanza Rising",
+                "author": "Pam Muñoz Ryan",
+                "source": "Open Library"
+              }
             },
             {
               "id": "middle-grade-readers-between-the-ages-of-8-and-12-accepting-the-challenge-3",
@@ -811,7 +1105,14 @@
                   "label": "Free on Audible right now",
                   "url": "https://stories.audible.com/pdp/B072C3MZ8V?ref=adbl_ent_anon_ds_pdp_pc_pg-1-cntr-0-9"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL26606417M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL26606417M",
+                "title": "Dreadnought",
+                "author": "April Daniels, Natasha Soudek",
+                "source": "Open Library"
+              }
             },
             {
               "id": "middle-grade-readers-between-the-ages-of-8-and-12-accepting-the-challenge-4",
@@ -827,7 +1128,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/flora-ulysses-the-illuminated-adventures",
                   "url": "https://www.commonsensemedia.org/book-reviews/flora-ulysses-the-illuminated-adventures"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL25436813M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL25436813M",
+                "title": "Flora & Ulysses",
+                "author": "Kate DiCamillo",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -849,7 +1157,14 @@
                   "label": "https://www.goodreads.com/book/show/4835.Haroun_and_the_Sea_of_Stories",
                   "url": "https://www.goodreads.com/book/show/4835.Haroun_and_the_Sea_of_Stories"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL1884567M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL1884567M",
+                "title": "Haroun and the Sea of Stories",
+                "author": "Salman Rushdie",
+                "source": "Open Library"
+              }
             },
             {
               "id": "middle-grade-readers-between-the-ages-of-8-and-12-epic-adventures-2",
@@ -865,7 +1180,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/i-survived-series",
                   "url": "https://www.commonsensemedia.org/book-reviews/i-survived-series"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL24456127M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL24456127M",
+                "title": "I Survived the Sinking of the Titanic, 1912",
+                "author": "Lauren Tarshis, Georgia Ball, Lauren Haus Studio, Scott Dawson",
+                "source": "Open Library"
+              }
             },
             {
               "id": "middle-grade-readers-between-the-ages-of-8-and-12-epic-adventures-3",
@@ -881,7 +1203,14 @@
                   "label": "https://www.goodreads.com/book/show/27213163-another-brooklyn",
                   "url": "https://www.goodreads.com/book/show/27213163-another-brooklyn"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL26604914M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL26604914M",
+                "title": "Another Brooklyn",
+                "author": "Jacqueline Woodson",
+                "source": "Open Library"
+              }
             }
           ]
         }
@@ -909,7 +1238,14 @@
                   "label": "https://www.goodreads.com/book/show/2213661.The_Graveyard_Book",
                   "url": "https://www.goodreads.com/book/show/2213661.The_Graveyard_Book"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL19429647M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL19429647M",
+                "title": "The Graveyard Book",
+                "author": "Neil Gaiman",
+                "source": "Open Library"
+              }
             },
             {
               "id": "young-adult-deliciously-dark-2",
@@ -925,7 +1261,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/truly-devious-book-1",
                   "url": "https://www.commonsensemedia.org/book-reviews/truly-devious-book-1"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/id/8367745-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/works/OL18013978W",
+                "title": "Truly Devious",
+                "author": "Maureen Johnson",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -942,7 +1285,14 @@
               "meta": "Recommended by Charlotte",
               "summary": "This dystopian novel is set in a society where the wealthy can purchase longer lives. Our hero, Jason Zhou, decides to changes things no matter the cost.",
               "note": "",
-              "links": []
+              "links": [],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL27332170M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL27332170M",
+                "title": "Want",
+                "author": "Cindy Pon",
+                "source": "Open Library"
+              }
             },
             {
               "id": "young-adult-missions-and-quests-2",
@@ -953,7 +1303,14 @@
               "meta": "",
               "summary": "",
               "note": "",
-              "links": []
+              "links": [],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL26377461M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL26377461M",
+                "title": "The Novice",
+                "author": "Taran Matharu",
+                "source": "Open Library"
+              }
             },
             {
               "id": "young-adult-missions-and-quests-3",
@@ -969,7 +1326,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/the-novice-summoner-book-1",
                   "url": "https://www.commonsensemedia.org/book-reviews/the-novice-summoner-book-1"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL8920095M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL8920095M",
+                "title": "The Novice",
+                "author": "Trudi Canavan, Richard Aspel",
+                "source": "Open Library"
+              }
             },
             {
               "id": "young-adult-missions-and-quests-4",
@@ -980,7 +1344,14 @@
               "meta": "",
               "summary": "Kaz Brekker is a thief, and a good one. But there's a reason they call him \"Dirtyhands\": in Ketterdam, a city known for its ruthless criminal element, Brekker may just be the most brilliant and ruthless of all. When he's kidnapped by a member of Ketterdam's Merchant Council, he's given an offer he's in no position to refuse: pull off the most daring heist in the history of the True Sea, in exchange for riches beyond imagining. To pull it off, he'll need a crew, a crew that's just as brilliant and ruthless as he is. A Long Way to a Small, Angry Planet and the Wayfarers series more broadly by Becky Chambers A team of weirdos aboard a small spaceship struggle to burn a wormhole tunnel through space to connect the Galactic Commons to a newly-contacted planet. Themes of found family and strength through diversity. Extremely kind-hearted and good.",
               "note": "(Recommended by David Rheinstrom, who heard about it from Kim! CW: crime, violence, profanity, and references to sex) (CW: limited sex and profanity, interplanetary politics)",
-              "links": []
+              "links": [],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL25908319M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL25908319M",
+                "title": "Six of Crows",
+                "author": "Leigh Bardugo",
+                "source": "Open Library"
+              }
             },
             {
               "id": "young-adult-missions-and-quests-5",
@@ -991,7 +1362,14 @@
               "meta": "Recommended by Charlotte",
               "summary": "In this action-packed urban fantasy, Sierra Santiago is looking forward to a fun summer of making art, hanging out with her friends, and skating around Brooklyn. But then a weird things start to happen. Sierra soon discovers a supernatural order called the Shadowshapers, who connect with spirits via paintings, music, and stories.",
               "note": "",
-              "links": []
+              "links": [],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL26886972M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL26886972M",
+                "title": "Shadowshaper (The Shadowshaper Cypher, Book 1)",
+                "author": "Daniel José Older",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -1008,7 +1386,14 @@
               "meta": "Recommended by Charlotte",
               "summary": "Spirits haunt the flooded streets of New Orleans in the aftermath of Hurricane Katrina. In a parallel universe, a utopian society watches our world, trying to learn from our mistakes. A black mother in the Jim Crow South must save her daughter from a fey offering impossible promises. And in the Hugo award-nominated short story \"The City Born Great,\" a young street kid fights to give birth to an old metropolis's soul.",
               "note": "",
-              "links": []
+              "links": [],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL26953089M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL26953089M",
+                "title": "How Long 'Til Black Future Month",
+                "author": "N. K. Jemisin, Michelle Charrier",
+                "source": "Open Library"
+              }
             },
             {
               "id": "young-adult-fantastic-worlds-2",
@@ -1024,7 +1409,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/the-princess-bride",
                   "url": "https://www.commonsensemedia.org/book-reviews/the-princess-bride"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL20161132M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL20161132M",
+                "title": "The Princess Bride",
+                "author": "William Goldman",
+                "source": "Open Library"
+              }
             },
             {
               "id": "young-adult-fantastic-worlds-3",
@@ -1040,7 +1432,14 @@
                   "label": "https://www.commonsensemedia.org/book-reviews/the-dragonet-prophecy-wings-of-fire-book-1",
                   "url": "https://www.commonsensemedia.org/book-reviews/the-dragonet-prophecy-wings-of-fire-book-1"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL37776168M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL37776168M",
+                "title": "The Dragonet Prophecy",
+                "author": "Tui T. Sutherland",
+                "source": "Open Library"
+              }
             }
           ]
         },
@@ -1062,7 +1461,14 @@
                   "label": "https://www.goodreads.com/book/show/139253.The_House_on_Mango_Street?from_search=true&qid=QzGNGqejzk&rank=1",
                   "url": "https://www.goodreads.com/book/show/139253.The_House_on_Mango_Street?from_search=true&qid=QzGNGqejzk&rank=1"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL27340489M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL27340489M",
+                "title": "The House on Mango Street",
+                "author": "Sandra Cisneros",
+                "source": "Open Library"
+              }
             },
             {
               "id": "young-adult-identity-and-what-it-means-to-be-human-2",
@@ -1073,7 +1479,14 @@
               "meta": "Recommended by Charlotte",
               "summary": "Love is worth everything, eighteen-year-old Madeline sums up the novel The Little Prince in the book Everything, Everything by Nicola Loon. Madeline, like the main character in her favorite novel, decides to follow her heart even though it means she might lose her own life. She suffers with SCID, a rare condition characterized by a nearly nonexistent immune system, and has lived all of her life inside a controlled, sterile environment. When she has the chance to experience love, however, Madeline decides a chance at being alive is worth the risk she must take.",
               "note": "",
-              "links": []
+              "links": [],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL26430329M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL26430329M",
+                "title": "Everything, Everything",
+                "author": "Nicola Yoon, Eric Chevreau (Traduction)",
+                "source": "Open Library"
+              }
             },
             {
               "id": "young-adult-identity-and-what-it-means-to-be-human-3",
@@ -1084,7 +1497,14 @@
               "meta": "Recommended by Charlotte",
               "summary": "",
               "note": "",
-              "links": []
+              "links": [],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL9129121M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL9129121M",
+                "title": "Never Let Me Go",
+                "author": "Kazuo Ishiguro",
+                "source": "Open Library"
+              }
             },
             {
               "id": "young-adult-identity-and-what-it-means-to-be-human-4",
@@ -1100,7 +1520,14 @@
                   "label": "https://www.goodreads.com/book/show/4214.Life_of_Pi",
                   "url": "https://www.goodreads.com/book/show/4214.Life_of_Pi"
                 }
-              ]
+              ],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL39208177M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL39208177M",
+                "title": "Life of Pi",
+                "author": "Yann Martel",
+                "source": "Open Library"
+              }
             },
             {
               "id": "young-adult-identity-and-what-it-means-to-be-human-5",
@@ -1111,7 +1538,14 @@
               "meta": "Recommended by Alexis",
               "summary": "It’s the summer between Junior and Senior year, and Elouise (Lou) Parker is determined to make this the most epic summer ever. And it would be if the world weren’t trying to ruin her plans. Instead she’s stuck playing the Hot Dog at Magic Castle (her favorite place in the whole world), her crush Nick is dating the Princess, and Magic Castle is closing at the end of the summer. But you better believe Lou is gonna do everything she can to turn this summer around.",
               "note": "",
-              "links": []
+              "links": [],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL30197024M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL30197024M",
+                "title": "Hot Dog Girl",
+                "author": "Jennifer Dugan",
+                "source": "Open Library"
+              }
             },
             {
               "id": "young-adult-identity-and-what-it-means-to-be-human-6",
@@ -1122,7 +1556,14 @@
               "meta": "Recommended by Alexis",
               "summary": "Jess is your typical high school girl. She’s got a crush on Abby, captain of the Volleyball team. She’s got two best friends and an annoying little brother. Oh yeah, and her parents are superheroes. But Jess did not get any superpowers, so instead, she’s got to find an internship. And when she gets an offer for a paid(!) internship at the same company as Abby, it’s too good to pass up. So she accepts, even after she finds out the internship is working for her parents’ arch-nemesis. What could go wrong?",
               "note": "",
-              "links": []
+              "links": [],
+              "cover": {
+                "imageUrl": "https://covers.openlibrary.org/b/olid/OL27010412M-L.jpg?default=false",
+                "pageUrl": "https://openlibrary.org/books/OL27010412M",
+                "title": "Not Your Sidekick",
+                "author": "C. B. Lee",
+                "source": "Open Library"
+              }
             }
           ]
         }

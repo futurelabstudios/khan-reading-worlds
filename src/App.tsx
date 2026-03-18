@@ -1,11 +1,60 @@
 import { useState, type CSSProperties } from "react";
-import readingData from "./data/recommendations.json";
+import rawReadingData from "./data/recommendations.json";
 
-type ReadingData = typeof readingData;
-type AgeGroup = ReadingData["ageGroups"][number];
-type Theme = AgeGroup["themes"][number];
-type Recommendation = Theme["recommendations"][number];
-type TeacherPick = ReadingData["teacherPicks"][number];
+type ResourceLink = {
+  label: string;
+  url: string;
+};
+
+type RecommendationCover = {
+  imageUrl: string;
+  pageUrl: string;
+  title: string;
+  author: string;
+  source: string;
+};
+
+type Recommendation = {
+  id: string;
+  headline: string;
+  title: string;
+  author: string;
+  recommender: string;
+  meta: string;
+  summary: string;
+  note: string;
+  links: ResourceLink[];
+  cover?: RecommendationCover | null;
+};
+
+type Theme = {
+  id: string;
+  title: string;
+  recommendations: Recommendation[];
+};
+
+type AgeGroup = {
+  id: string;
+  label: string;
+  themes: Theme[];
+};
+
+type TeacherPick = {
+  id: string;
+  name: string;
+  picks: string[];
+  resource: ResourceLink | null;
+};
+
+type ReadingData = {
+  sourceUrl: string;
+  syncedAt: string;
+  intro: string;
+  ageGroups: AgeGroup[];
+  teacherPicks: TeacherPick[];
+};
+
+const readingData = rawReadingData as ReadingData;
 type GroupId = AgeGroup["id"];
 type IconKind = GroupId | "teacher";
 
@@ -117,6 +166,30 @@ function getByline(recommendation: Recommendation) {
 
 function getPrimaryLink(recommendation: Recommendation) {
   return recommendation.links[0] ?? null;
+}
+
+function getCardLink(recommendation: Recommendation) {
+  const primaryLink = getPrimaryLink(recommendation);
+  if (primaryLink) {
+    return primaryLink;
+  }
+
+  if (recommendation.cover?.pageUrl) {
+    return {
+      label: recommendation.cover.source,
+      url: recommendation.cover.pageUrl,
+    };
+  }
+
+  return null;
+}
+
+function getCoverMonogram(title: string) {
+  return title
+    .split(/\s+/)
+    .slice(0, 2)
+    .map((word) => word[0]?.toUpperCase() ?? "")
+    .join("");
 }
 
 function getProfileStyle(profile: GroupProfile): CSSProperties {
@@ -292,36 +365,77 @@ function RecommendationCard({
   profile: GroupProfile;
   groupLabel: string;
 }) {
+  const [coverBroken, setCoverBroken] = useState(false);
   const primaryLink = getPrimaryLink(recommendation);
+  const cardLink = getCardLink(recommendation);
   const byline = getByline(recommendation);
+  const cover = !coverBroken ? recommendation.cover : null;
 
   return (
     <article
       className="recommendation-card"
       style={getProfileStyle(profile)}
     >
-      <div className="recommendation-card__top">
-        <span className="recommendation-card__shelf">{groupLabel}</span>
-        {recommendation.meta ? (
-          <span className="recommendation-card__badge">{recommendation.meta}</span>
-        ) : null}
-      </div>
-
-      <h4>{recommendation.title}</h4>
-      {byline ? <p className="recommendation-card__byline">{byline}</p> : null}
-      <p className="recommendation-card__summary">{recommendation.summary}</p>
-      {recommendation.note ? (
-        <p className="recommendation-card__note">{recommendation.note}</p>
-      ) : null}
-
-      <div className="recommendation-card__footer">
-        {primaryLink ? (
-          <a href={primaryLink.url} target="_blank" rel="noreferrer">
-            Explore source
+      <div className="recommendation-card__media">
+        {cardLink ? (
+          <a
+            className={`recommendation-card__cover ${cover ? "" : "recommendation-card__cover--fallback"}`}
+            href={cardLink.url}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {cover ? (
+              <img
+                src={cover.imageUrl}
+                alt={`Cover of ${recommendation.title}`}
+                loading="lazy"
+                decoding="async"
+                onError={() => setCoverBroken(true)}
+              />
+            ) : (
+              <span className="recommendation-card__monogram">
+                {getCoverMonogram(recommendation.title)}
+              </span>
+            )}
           </a>
         ) : (
-          <span>Shared by the Khan Academy team</span>
+          <div className="recommendation-card__cover recommendation-card__cover--fallback">
+            <span className="recommendation-card__monogram">
+              {getCoverMonogram(recommendation.title)}
+            </span>
+          </div>
         )}
+      </div>
+
+      <div className="recommendation-card__content">
+        <div className="recommendation-card__top">
+          <span className="recommendation-card__shelf">{groupLabel}</span>
+          {recommendation.meta ? (
+            <span className="recommendation-card__badge">{recommendation.meta}</span>
+          ) : null}
+        </div>
+
+        <h4>{recommendation.title}</h4>
+        {byline ? <p className="recommendation-card__byline">{byline}</p> : null}
+        <p className="recommendation-card__summary">{recommendation.summary}</p>
+        {recommendation.note ? (
+          <p className="recommendation-card__note">{recommendation.note}</p>
+        ) : null}
+
+        <div className="recommendation-card__footer">
+          <span>
+            {cover ? `${cover.source} cover` : "Shared by the Khan Academy team"}
+          </span>
+          {primaryLink ? (
+            <a href={primaryLink.url} target="_blank" rel="noreferrer">
+              Explore source
+            </a>
+          ) : recommendation.cover ? (
+            <a href={recommendation.cover.pageUrl} target="_blank" rel="noreferrer">
+              Open book record
+            </a>
+          ) : null}
+        </div>
       </div>
     </article>
   );
@@ -530,31 +644,40 @@ export default function App() {
         </section>
 
         <section className="navigator" id="collection">
-          <div className="section-heading section-heading--compact">
-            <div>
-              <p className="section-heading__eyebrow">Or search the full library</p>
-              <h2>Filter by title, age band, theme, or recommender.</h2>
-            </div>
-            <p className="section-heading__copy">
-              Use this when you don&apos;t know exactly where to begin, or when
-              you want to narrow the collection to a very specific kind of read.
-            </p>
-          </div>
-
           <div className="navigator__panel">
-            <label className="search-field">
-              <span>Search</span>
-              <input
-                type="search"
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
-                placeholder="Try fantasy, snow, Charlotte, or Harry Potter"
-                aria-label="Search reading recommendations"
-              />
-            </label>
+            <div className="navigator__header">
+              <div>
+                <p className="section-heading__eyebrow">Find a fit</p>
+                <h2>Browse the full library without losing the page.</h2>
+              </div>
+              <p className="navigator__summary">
+                Showing {visibleRecommendations} books across {visibleThemeCount} visible shelves
+              </p>
+            </div>
 
-            <div className="navigator__summary">
-              Showing {visibleRecommendations} books across {visibleThemeCount} visible shelves
+            <div className="navigator__toolbar">
+              <label className="search-field">
+                <span>Search the shelves</span>
+                <input
+                  type="search"
+                  value={query}
+                  onChange={(event) => setQuery(event.target.value)}
+                  placeholder="Try fantasy, snow, Charlotte, or Harry Potter"
+                  aria-label="Search reading recommendations"
+                />
+              </label>
+              {activeFilters ? (
+                <button
+                  className="reset-link"
+                  onClick={() => {
+                    setQuery("");
+                    setSelectedGroup("all");
+                  }}
+                  type="button"
+                >
+                  Clear filters
+                </button>
+              ) : null}
             </div>
 
             <div className="navigator__filters" role="tablist" aria-label="Age group filters">
@@ -582,22 +705,9 @@ export default function App() {
               </a>
             </div>
 
-            {activeFilters ? (
-              <button
-                className="reset-link"
-                onClick={() => {
-                  setQuery("");
-                  setSelectedGroup("all");
-                }}
-                type="button"
-              >
-                Reset filters
-              </button>
-            ) : null}
-
             {currentThemeLinks.length > 0 ? (
-              <div className="theme-jumps">
-                <span className="theme-jumps__label">Themes in this shelf</span>
+              <div className="theme-jumps theme-jumps--navigator">
+                <span className="theme-jumps__label">Visible themes</span>
                 {currentThemeLinks.map((theme) => (
                   <a href={`#${theme.id}`} key={theme.id} className="theme-jump">
                     {theme.title}
@@ -705,12 +815,16 @@ export default function App() {
         <footer className="footer">
           <p>
             Built from the published Khan Academy recommendation document and
-            reshaped into a calmer, more visual reading resource.
+            reshaped into a calmer, more visual reading resource. Book cover
+            thumbnails come from Open Library.
           </p>
           <div className="footer__links">
             <a href="#top">Back to top</a>
             <a href={readingData.sourceUrl} target="_blank" rel="noreferrer">
               Open the source doc
+            </a>
+            <a href="https://openlibrary.org" target="_blank" rel="noreferrer">
+              Open Library
             </a>
           </div>
         </footer>
