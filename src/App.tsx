@@ -7,6 +7,7 @@ type Theme = AgeGroup["themes"][number];
 type Recommendation = Theme["recommendations"][number];
 type TeacherPick = ReadingData["teacherPicks"][number];
 type GroupId = AgeGroup["id"];
+type IconKind = GroupId | "teacher";
 
 type GroupProfile = {
   eyebrow: string;
@@ -14,90 +15,47 @@ type GroupProfile = {
   accent: string;
   ink: string;
   wash: string;
-  covers: Array<[string, string]>;
+  tint: string;
 };
 
 const GROUP_PROFILES: Record<GroupId, GroupProfile> = {
   "picture-books-by-topic": {
     eyebrow: "Read-aloud magic",
     description:
-      "Warm, inventive picture books for big feelings, big laughs, and even bigger curiosity.",
-    accent: "#14735c",
-    ink: "#14342b",
-    wash: "#eef9f4",
-    covers: [
-      ["#f3c15d", "#d87433"],
-      ["#3f9d8b", "#165d50"],
-      ["#ff8b6a", "#b94834"],
-    ],
+      "Warm, inviting books for early readers, shared read-alouds, and joyful story time.",
+    accent: "#f3b35b",
+    ink: "#193c72",
+    wash: "#fff7e8",
+    tint: "#fde9c6",
   },
   "chapter-books": {
-    eyebrow: "Bridge readers",
+    eyebrow: "Independent readers",
     description:
-      "Independent-reader adventures packed with mysteries, missions, animals, and comic energy.",
-    accent: "#cc6936",
-    ink: "#422118",
-    wash: "#fff3eb",
-    covers: [
-      ["#ffbf7a", "#d16a29"],
-      ["#f58d6a", "#a54833"],
-      ["#7956d4", "#46307d"],
-    ],
+      "Mysteries, humor, and adventure stories for kids ready to stretch into longer reads.",
+    accent: "#f26a33",
+    ink: "#193c72",
+    wash: "#fff1ea",
+    tint: "#ffd7c7",
   },
   "middle-grade-readers-between-the-ages-of-8-and-12": {
     eyebrow: "Big world energy",
     description:
-      "For readers ready for epic stakes, secret powers, hard choices, and unforgettable friendships.",
-    accent: "#4767c7",
-    ink: "#172544",
-    wash: "#eef3ff",
-    covers: [
-      ["#5b7bde", "#2f468c"],
-      ["#7ab7ff", "#3c74bf"],
-      ["#b573ff", "#7044a7"],
-    ],
+      "Epic quests, mischief, secret powers, and unforgettable middle-grade page-turners.",
+    accent: "#5d43e7",
+    ink: "#193c72",
+    wash: "#f1efff",
+    tint: "#ddd4ff",
   },
   "young-adult": {
-    eyebrow: "Thought-provoking favorites",
+    eyebrow: "Thoughtful favorites",
     description:
-      "Darkly delicious, emotionally rich, and identity-shaping stories for older readers.",
-    accent: "#8f365f",
-    ink: "#3d1828",
-    wash: "#fff0f6",
-    covers: [
-      ["#df77a2", "#8f365f"],
-      ["#5b8b8c", "#295354"],
-      ["#241f4f", "#5f4fc2"],
-    ],
+      "Richer, darker, identity-shaping stories for older readers ready for bigger stakes.",
+    accent: "#7d2d7b",
+    ink: "#193c72",
+    wash: "#f9eff7",
+    tint: "#edcde7",
   },
 };
-
-const HERO_CARDS = [
-  { label: "Picture Books", title: "Try, try again!" },
-  { label: "Chapter Books", title: "Detectives: on the case!" },
-  { label: "Young Adult", title: "Fantastic worlds" },
-];
-
-const READING_STEPS = [
-  {
-    title: "Choose a shelf",
-    body: "Start with picture books, chapter books, middle grade, or young adult.",
-    action: "Jump to age groups",
-    href: "#reading-map",
-  },
-  {
-    title: "Use theme shelves",
-    body: "Once you land in a section, jump by mood, interest, or reading vibe.",
-    action: "Browse themes",
-    href: "#collection",
-  },
-  {
-    title: "Open teacher picks",
-    body: "Need a short shortlist fast? Head straight to the ambassador recommendations.",
-    action: "See teacher picks",
-    href: "#teacher-picks",
-  },
-];
 
 const SEARCHABLE_FIELDS = [
   "title",
@@ -145,20 +103,6 @@ function matchesSearch(recommendation: Recommendation, query: string) {
   );
 }
 
-function getCoverLabel(title: string) {
-  const words = title
-    .replace(/[^\p{L}\p{N}\s'’&-]/gu, " ")
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 3);
-
-  return words.join(" ");
-}
-
-function getPrimaryLink(recommendation: Recommendation) {
-  return recommendation.links[0] ?? null;
-}
-
 function getByline(recommendation: Recommendation) {
   if (recommendation.author) {
     return `by ${recommendation.author}`;
@@ -171,35 +115,182 @@ function getByline(recommendation: Recommendation) {
   return "";
 }
 
-function getAccentStyle(
-  profile: GroupProfile,
-  themeIndex: number,
-  recommendationIndex = 0,
-): CSSProperties {
-  const [coverStart, coverEnd] =
-    profile.covers[(themeIndex + recommendationIndex) % profile.covers.length];
+function getPrimaryLink(recommendation: Recommendation) {
+  return recommendation.links[0] ?? null;
+}
 
+function getProfileStyle(profile: GroupProfile): CSSProperties {
   return {
     "--accent": profile.accent,
     "--ink": profile.ink,
     "--wash": profile.wash,
-    "--cover-start": coverStart,
-    "--cover-end": coverEnd,
+    "--tint": profile.tint,
   } as CSSProperties;
+}
+
+function BrandMark() {
+  return (
+    <svg
+      aria-hidden="true"
+      className="brand-mark"
+      viewBox="0 0 44 44"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect x="2" y="2" width="40" height="40" rx="14" fill="#14B892" />
+      <path
+        d="M22 11 31 16.5V26c0 5.2-4.1 9.4-9 9.4S13 31.2 13 26v-9.5L22 11Z"
+        fill="#fff"
+      />
+      <path
+        d="M22 16c2.9 0 5.2 2.2 5.5 5h-11c.3-2.8 2.6-5 5.5-5Z"
+        fill="#14B892"
+      />
+    </svg>
+  );
+}
+
+function DoodleIcon({ kind }: { kind: IconKind }) {
+  switch (kind) {
+    case "picture-books-by-topic":
+      return (
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M14 44 44 14" />
+          <path d="M18 20 46 48" />
+          <path d="M18 48h30" />
+          <path d="M44 14h6v6" />
+          <path d="M14 44v6h6" />
+        </svg>
+      );
+    case "chapter-books":
+      return (
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M16 18c8-3 14-3 20 0v30c-6-3-12-3-20 0V18Z" />
+          <path d="M48 18c-8-3-14-3-20 0v30c6-3 12-3 20 0V18Z" />
+          <path d="M28 22v26" />
+        </svg>
+      );
+    case "middle-grade-readers-between-the-ages-of-8-and-12":
+      return (
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M32 14 42 22l8 10-8 10-10 8-10-8-8-10 8-10 10-8Z" />
+          <path d="M32 22v20" />
+          <path d="M22 32h20" />
+          <circle cx="32" cy="32" r="4" />
+        </svg>
+      );
+    case "young-adult":
+      return (
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <path d="m32 12 4 12 12 1-9 7 3 12-10-6-10 6 3-12-9-7 12-1 4-12Z" />
+          <path d="M18 48c4-3 8-4 14-4s10 1 14 4" />
+        </svg>
+      );
+    default:
+      return (
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="28" r="12" />
+          <path d="M24 38v10l8-5 8 5V38" />
+          <path d="m28 28 3 3 5-6" />
+        </svg>
+      );
+  }
+}
+
+function HeroIllustration() {
+  return (
+    <svg
+      className="hero-illustration"
+      viewBox="0 0 720 500"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path
+        d="M430 396 654 345l33 91H506l-76-40Z"
+        fill="#B4D7E5"
+        opacity=".78"
+      />
+      <path d="M316 388 543 350l-28 75-160 14Z" fill="#A7CDDD" opacity=".75" />
+      <path
+        d="M470 250 626 292l-82 147-164-34 90-155Z"
+        fill="#FFF9F1"
+        transform="rotate(7 470 250)"
+      />
+      <path
+        d="M417 286h184v82H417z"
+        fill="#6F2774"
+        transform="rotate(18 417 286)"
+      />
+      <path
+        d="M383 258h184v82H383z"
+        fill="#F66A35"
+        transform="rotate(18 383 258)"
+      />
+      <path
+        d="M454 114 548 184l9 147-110 38-23-173Z"
+        fill="#4F35E8"
+      />
+      <path
+        d="M452 136 531 93l8 126-87 50-5-133Z"
+        fill="#E8CADB"
+      />
+      <path
+        d="M443 143 536 91l8 120-92 52-9-120Z"
+        fill="#312C4B"
+      />
+      <path
+        d="M430 207 525 265l-99 59 4-117Z"
+        fill="#4F35E8"
+      />
+      <g fill="#2D2046" opacity=".9">
+        <ellipse cx="469" cy="255" rx="10" ry="5" transform="rotate(-20 469 255)" />
+        <ellipse cx="495" cy="246" rx="10" ry="5" transform="rotate(-20 495 246)" />
+        <ellipse cx="519" cy="236" rx="10" ry="5" transform="rotate(-20 519 236)" />
+        <ellipse cx="468" cy="286" rx="10" ry="5" transform="rotate(-20 468 286)" />
+        <ellipse cx="494" cy="276" rx="10" ry="5" transform="rotate(-20 494 276)" />
+        <ellipse cx="519" cy="266" rx="10" ry="5" transform="rotate(-20 519 266)" />
+      </g>
+      <path
+        d="M325 360c20-9 38 3 46 18 7 12 14 33 30 41"
+        stroke="#111111"
+        strokeWidth="6"
+        strokeLinecap="round"
+      />
+      <path
+        d="M362 334c12 2 19 11 18 24"
+        stroke="#111111"
+        strokeWidth="6"
+        strokeLinecap="round"
+      />
+      <path
+        d="M617 116 704 48l16 20-102 83-44 16 24-35Z"
+        fill="#F9BE42"
+      />
+      <path
+        d="M346 126 356 106M351 117l-12-6M351 117l14 3M351 117l2 14"
+        stroke="#2A5F9E"
+        strokeWidth="4"
+        strokeLinecap="round"
+      />
+      <path
+        d="m548 133 16 11M560 121l2 23M548 126l17-10"
+        stroke="#E8CADB"
+        strokeWidth="5"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
 }
 
 function RecommendationCard({
   recommendation,
-  groupLabel,
   profile,
-  themeIndex,
-  recommendationIndex,
+  groupLabel,
 }: {
   recommendation: Recommendation;
-  groupLabel: string;
   profile: GroupProfile;
-  themeIndex: number;
-  recommendationIndex: number;
+  groupLabel: string;
 }) {
   const primaryLink = getPrimaryLink(recommendation);
   const byline = getByline(recommendation);
@@ -207,41 +298,30 @@ function RecommendationCard({
   return (
     <article
       className="recommendation-card"
-      style={getAccentStyle(profile, themeIndex, recommendationIndex)}
+      style={getProfileStyle(profile)}
     >
-      <div className="recommendation-card__cover">
-        <span className="recommendation-card__cover-label">{groupLabel}</span>
-        <strong>{getCoverLabel(recommendation.title)}</strong>
+      <div className="recommendation-card__top">
+        <span className="recommendation-card__shelf">{groupLabel}</span>
+        {recommendation.meta ? (
+          <span className="recommendation-card__badge">{recommendation.meta}</span>
+        ) : null}
       </div>
 
-      <div className="recommendation-card__body">
-        <div className="recommendation-card__chips">
-          {recommendation.meta ? (
-            <span className="chip chip--accent">{recommendation.meta}</span>
-          ) : null}
-          {recommendation.note ? (
-            <span className="chip chip--muted">Content note</span>
-          ) : null}
-        </div>
+      <h4>{recommendation.title}</h4>
+      {byline ? <p className="recommendation-card__byline">{byline}</p> : null}
+      <p className="recommendation-card__summary">{recommendation.summary}</p>
+      {recommendation.note ? (
+        <p className="recommendation-card__note">{recommendation.note}</p>
+      ) : null}
 
-        <h4>{recommendation.title}</h4>
-        {byline ? <p className="recommendation-card__byline">{byline}</p> : null}
-        <p className="recommendation-card__summary">{recommendation.summary}</p>
-        {recommendation.note ? (
-          <p className="recommendation-card__note">{recommendation.note}</p>
-        ) : null}
-
-        <div className="recommendation-card__footer">
-          {primaryLink ? (
-            <a href={primaryLink.url} target="_blank" rel="noreferrer">
-              Explore source
-            </a>
-          ) : (
-            <span className="recommendation-card__source">
-              Shared by the Khan Academy team
-            </span>
-          )}
-        </div>
+      <div className="recommendation-card__footer">
+        {primaryLink ? (
+          <a href={primaryLink.url} target="_blank" rel="noreferrer">
+            Explore source
+          </a>
+        ) : (
+          <span>Shared by the Khan Academy team</span>
+        )}
       </div>
     </article>
   );
@@ -250,9 +330,14 @@ function RecommendationCard({
 function TeacherCard({ pick }: { pick: TeacherPick }) {
   return (
     <article className="teacher-card">
-      <div className="teacher-card__header">
-        <p className="teacher-card__eyebrow">Ambassador shelf</p>
-        <h3>{pick.name}</h3>
+      <div className="teacher-card__top">
+        <span className="teacher-card__icon">
+          <DoodleIcon kind="teacher" />
+        </span>
+        <div>
+          <p className="teacher-card__eyebrow">Ambassador shelf</p>
+          <h3>{pick.name}</h3>
+        </div>
       </div>
 
       {pick.picks.length > 0 ? (
@@ -268,12 +353,7 @@ function TeacherCard({ pick }: { pick: TeacherPick }) {
       )}
 
       {pick.resource ? (
-        <a
-          className="teacher-card__link"
-          href={pick.resource.url}
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={pick.resource.url} target="_blank" rel="noreferrer">
           Open "{pick.resource.label}"
         </a>
       ) : null}
@@ -285,11 +365,6 @@ export default function App() {
   const [query, setQuery] = useState("");
   const [selectedGroup, setSelectedGroup] = useState<GroupId | "all">("all");
   const normalizedQuery = query.trim().toLowerCase();
-  const selectedGroupLabel =
-    selectedGroup === "all"
-      ? "All shelves"
-      : readingData.ageGroups.find((group) => group.id === selectedGroup)?.label ??
-        "Selected shelf";
 
   const visibleGroups: AgeGroup[] = [];
   for (const group of readingData.ageGroups) {
@@ -321,7 +396,6 @@ export default function App() {
 
   const totalRecommendations = getTotalRecommendations(readingData.ageGroups);
   const totalThemes = getTotalThemes(readingData.ageGroups);
-  const totalTeacherShelves = readingData.teacherPicks.length;
   const visibleRecommendations = getTotalRecommendations(visibleGroups);
   const visibleThemeCount = getTotalThemes(visibleGroups);
   const currentThemeLinks =
@@ -332,187 +406,160 @@ export default function App() {
           title: theme.title,
           count: theme.recommendations.length,
         }));
+
   const activeFilters = selectedGroup !== "all" || normalizedQuery.length > 0;
 
-  const handleShelfJump = (targetId: string) => {
-    setQuery("");
-    setSelectedGroup("all");
-
+  const jumpToAnchor = (id: string) => {
     window.setTimeout(() => {
-      const target = document.getElementById(targetId);
-      if (!target) {
+      const element = document.getElementById(id);
+      if (!element) {
         return;
       }
 
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 0);
+  };
+
+  const jumpToShelf = (id: string) => {
+    setQuery("");
+    setSelectedGroup("all");
+    jumpToAnchor(id);
   };
 
   return (
     <div className="site-shell" id="top">
       <header className="topbar">
         <a href="#top" className="topbar__brand">
-          <span className="topbar__brand-mark">KR</span>
-          <span className="topbar__brand-copy">
+          <BrandMark />
+          <div className="topbar__brand-copy">
             <strong>Khan Academy Reading Worlds</strong>
-            <small>Reading lists, organized for quick browsing</small>
-          </span>
+            <small>Curated lists for families, classrooms, and curious readers</small>
+          </div>
         </a>
+
         <nav className="topbar__nav">
-          <a href="#reading-map">Start here</a>
-          <a href="#collection">Browse shelves</a>
-          <a href="#teacher-picks">Teacher Picks</a>
+          <a href="#start-here">Start here</a>
+          <a href="#collection">Search library</a>
+          <a href="#teacher-picks">Teacher picks</a>
           <a href={readingData.sourceUrl} target="_blank" rel="noreferrer">
             Source doc
           </a>
         </nav>
+
+        <a className="topbar__cta" href="#collection">
+          Browse all books
+        </a>
       </header>
 
+      <section className="hero-band">
+        <div className="hero-band__inner">
+          <div className="hero-copy">
+            <p className="hero-copy__eyebrow">Khan Academy staff library</p>
+            <h1>
+              We&apos;re here with recommended books to{" "}
+              <span className="hero-copy__highlight">Keep Everyone Reading</span>
+            </h1>
+            <p className="hero-copy__lead">
+              Picture books, chapter books, middle grade adventures, and young
+              adult favorites selected by the Khan Academy team and organized
+              into a library that&apos;s easier to share.
+            </p>
+
+            <div className="hero-copy__actions">
+              <a className="button button--primary" href="#start-here">
+                Start browsing
+              </a>
+              <a className="button button--secondary" href="#teacher-picks">
+                Open teacher picks
+              </a>
+            </div>
+
+            <p className="hero-copy__meta">
+              <span>{totalRecommendations} books</span>
+              <span>{totalThemes} theme shelves</span>
+              <span>Updated {formatSyncDate(readingData.syncedAt)}</span>
+            </p>
+          </div>
+
+          <div className="hero-art">
+            <HeroIllustration />
+          </div>
+        </div>
+      </section>
+
       <main className="page">
-        <section className="hero">
-          <div className="hero__content">
-            <p className="hero__eyebrow">Khan Academy staff library</p>
-            <h1>Books that children will not want to put down.</h1>
-            <p className="hero__lead">
-              {readingData.intro} The original recommendations now live in a
-              calmer, more visual home that is easy to browse, share, and send
-              to families, teachers, and curious readers.
-            </p>
-
-            <div className="hero__actions">
-              <a className="button button--solid" href="#collection">
-                Browse the shelves
-              </a>
-              <a
-                className="button button--ghost"
-                href={readingData.sourceUrl}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Open the published doc
-              </a>
-            </div>
-
-            <div className="hero__stats" aria-label="Site summary">
-              <div className="hero-stat">
-                <strong>{totalRecommendations}</strong>
-                <span>recommendations</span>
-              </div>
-              <div className="hero-stat">
-                <strong>{totalThemes}</strong>
-                <span>theme shelves</span>
-              </div>
-              <div className="hero-stat">
-                <strong>{totalTeacherShelves}</strong>
-                <span>teacher spotlights</span>
-              </div>
-            </div>
-
-            <p className="hero__timestamp">
-              Last synced from the source document on{" "}
-              {formatSyncDate(readingData.syncedAt)}.
-            </p>
-          </div>
-
-          <div className="hero__visual" aria-hidden="true">
-            <div className="hero__halo" />
-            {HERO_CARDS.map((card, index) => (
-              <article
-                className={`floating-book floating-book--${index + 1}`}
-                key={card.title}
-              >
-                <span>{card.label}</span>
-                <strong>{card.title}</strong>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="reading-map" id="reading-map">
-          <div className="reading-map__header">
+        <section className="entry-section" id="start-here">
+          <div className="section-heading">
             <div>
-              <p className="section-kicker">Reading map</p>
-              <h2>Find the right path into the library.</h2>
+              <p className="section-heading__eyebrow">Choose a starting point</p>
+              <h2>Jump into the shelf that fits the reader in front of you.</h2>
             </div>
-            <p className="reading-map__copy">
-              Navigate in two ways: jump straight to a shelf if you know the
-              audience, or use the filters below to narrow by title, mood, or
-              topic.
+            <p className="section-heading__copy">
+              These audience-first cards are the quickest way into the
+              collection. If you already know the age band, start here.
             </p>
           </div>
 
-          <div className="reading-map__steps">
-            {READING_STEPS.map((step, index) => (
-              <article className="reading-step" key={step.title}>
-                <span className="reading-step__number">0{index + 1}</span>
-                <h3>{step.title}</h3>
-                <p>{step.body}</p>
-                <a href={step.href}>{step.action}</a>
-              </article>
-            ))}
-          </div>
-
-          <div className="reading-map__jump-grid">
-            {readingData.ageGroups.map((group, index) => {
+          <div className="entry-grid">
+            {readingData.ageGroups.map((group) => {
               const profile = GROUP_PROFILES[group.id];
+              const count = getTotalRecommendations([group]);
+
               return (
                 <button
-                  className="jump-card"
+                  className="entry-card"
                   key={group.id}
-                  onClick={() => handleShelfJump(group.id)}
-                  style={getAccentStyle(profile, index)}
+                  onClick={() => jumpToShelf(group.id)}
+                  style={getProfileStyle(profile)}
                   type="button"
                 >
-                  <span className="jump-card__eyebrow">{profile.eyebrow}</span>
-                  <strong>{group.label}</strong>
-                  <p>{getTotalRecommendations([group])} books across {group.themes.length} theme shelves</p>
+                  <span className="entry-card__icon">
+                    <DoodleIcon kind={group.id} />
+                  </span>
+                  <p className="entry-card__eyebrow">{profile.eyebrow}</p>
+                  <h3>{group.label}</h3>
+                  <p className="entry-card__copy">{profile.description}</p>
+                  <div className="entry-card__meta">
+                    <span>{count} books</span>
+                    <span>{group.themes.length} shelves</span>
+                  </div>
                 </button>
               );
             })}
-
-            <button
-              className="jump-card jump-card--teacher"
-              onClick={() => handleShelfJump("teacher-picks")}
-              type="button"
-            >
-              <span className="jump-card__eyebrow">Fast shortlist</span>
-              <strong>Teacher picks</strong>
-              <p>{totalTeacherShelves} ambassador shelves for quick recommendations</p>
-            </button>
           </div>
         </section>
 
-        <section className="filter-panel" id="collection">
-          <div className="filter-panel__header">
+        <section className="navigator" id="collection">
+          <div className="section-heading section-heading--compact">
             <div>
-              <p className="section-kicker">Find a fit</p>
-              <h2>Search by age band, mood, or book title.</h2>
-              <p className="filter-panel__helper">
-                Use these controls when you want to narrow the library instead
-                of jumping around it.
-              </p>
+              <p className="section-heading__eyebrow">Or search the full library</p>
+              <h2>Filter by title, age band, theme, or recommender.</h2>
             </div>
-            <p className="filter-panel__count">
-              {selectedGroupLabel}: {visibleRecommendations} books across{" "}
-              {visibleThemeCount} visible theme shelves
+            <p className="section-heading__copy">
+              Use this when you don&apos;t know exactly where to begin, or when
+              you want to narrow the collection to a very specific kind of read.
             </p>
           </div>
 
-          <div className="filter-panel__controls">
+          <div className="navigator__panel">
             <label className="search-field">
-              <span className="search-field__label">Search</span>
+              <span>Search</span>
               <input
                 type="search"
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
-                placeholder="Try 'fantasy', 'snow', 'Charlotte', or 'Harry Potter'"
+                placeholder="Try fantasy, snow, Charlotte, or Harry Potter"
                 aria-label="Search reading recommendations"
               />
             </label>
 
-            <div className="pill-row" role="tablist" aria-label="Age group filters">
+            <div className="navigator__summary">
+              Showing {visibleRecommendations} books across {visibleThemeCount} visible shelves
+            </div>
+
+            <div className="navigator__filters" role="tablist" aria-label="Age group filters">
               <button
-                className={`pill ${selectedGroup === "all" ? "pill--active" : ""}`}
+                className={`filter-pill ${selectedGroup === "all" ? "filter-pill--active" : ""}`}
                 onClick={() => setSelectedGroup("all")}
                 type="button"
               >
@@ -520,21 +567,24 @@ export default function App() {
               </button>
               {readingData.ageGroups.map((group) => (
                 <button
-                  key={group.id}
-                  className={`pill ${
-                    selectedGroup === group.id ? "pill--active" : ""
+                  className={`filter-pill ${
+                    selectedGroup === group.id ? "filter-pill--active" : ""
                   }`}
+                  key={group.id}
                   onClick={() => setSelectedGroup(group.id)}
                   type="button"
                 >
                   {group.label}
                 </button>
               ))}
+              <a className="filter-pill filter-pill--anchor" href="#teacher-picks">
+                Teacher picks
+              </a>
             </div>
 
             {activeFilters ? (
               <button
-                className="button button--ghost button--small"
+                className="reset-link"
                 onClick={() => {
                   setQuery("");
                   setSelectedGroup("all");
@@ -544,117 +594,66 @@ export default function App() {
                 Reset filters
               </button>
             ) : null}
+
+            {currentThemeLinks.length > 0 ? (
+              <div className="theme-jumps">
+                <span className="theme-jumps__label">Themes in this shelf</span>
+                {currentThemeLinks.map((theme) => (
+                  <a href={`#${theme.id}`} key={theme.id} className="theme-jump">
+                    {theme.title}
+                    <span>{theme.count}</span>
+                  </a>
+                ))}
+              </div>
+            ) : null}
           </div>
-
-          <div className="browse-links" aria-label="Quick section links">
-            <span className="browse-links__label">Quick jumps</span>
-            {readingData.ageGroups.map((group) => (
-              <button
-                className="browse-link"
-                key={group.id}
-                onClick={() => handleShelfJump(group.id)}
-                type="button"
-              >
-                {group.label}
-              </button>
-            ))}
-            <a className="browse-link browse-link--anchor" href="#teacher-picks">
-              Teacher picks
-            </a>
-          </div>
-
-          {currentThemeLinks.length > 0 ? (
-            <div className="theme-link-row">
-              <span className="browse-links__label">Themes in this shelf</span>
-              {currentThemeLinks.map((theme) => (
-                <a href={`#${theme.id}`} key={theme.id} className="theme-link">
-                  {theme.title}
-                  <span>{theme.count}</span>
-                </a>
-              ))}
-            </div>
-          ) : null}
-        </section>
-
-        <section className="spotlight-grid" aria-label="Age group spotlights">
-          {readingData.ageGroups.map((group, index) => {
-            const profile = GROUP_PROFILES[group.id];
-            const recommendationCount = getTotalRecommendations([group]);
-
-            return (
-              <a
-                href={`#${group.id}`}
-                key={group.id}
-                className="spotlight-card"
-                style={getAccentStyle(profile, index)}
-                onClick={(event) => {
-                  event.preventDefault();
-                  handleShelfJump(group.id);
-                }}
-              >
-                <div className="spotlight-card__top">
-                  <span>{profile.eyebrow}</span>
-                  <span>{recommendationCount} picks</span>
-                </div>
-                <h3>{group.label}</h3>
-                <p>{profile.description}</p>
-                <div className="spotlight-card__footer">
-                  <span>{group.themes.length} themed shelves</span>
-                  <span>Jump to shelf</span>
-                </div>
-              </a>
-            );
-          })}
         </section>
 
         {visibleGroups.length === 0 ? (
           <section className="empty-state">
-            <p className="section-kicker">No matches yet</p>
+            <p className="section-heading__eyebrow">No matches yet</p>
             <h2>Try a broader search.</h2>
             <p>
               A different age band, author name, or theme should bring the
-              shelves back into view.
+              collection back into view.
             </p>
           </section>
         ) : (
           visibleGroups.map((group) => {
             const profile = GROUP_PROFILES[group.id];
+
             return (
               <section
                 className="collection-section"
                 id={group.id}
                 key={group.id}
-                style={{
-                  "--accent": profile.accent,
-                  "--wash": profile.wash,
-                  "--ink": profile.ink,
-                } as CSSProperties}
+                style={getProfileStyle(profile)}
               >
-                <div className="collection-section__header">
-                  <div>
-                    <p className="section-kicker">{profile.eyebrow}</p>
-                    <h2>{group.label}</h2>
-                    <p className="collection-section__copy">
-                      {profile.description}
-                    </p>
+                <div className="collection-section__intro">
+                  <div className="collection-section__title">
+                    <span className="collection-section__icon">
+                      <DoodleIcon kind={group.id} />
+                    </span>
+                    <div>
+                      <p className="collection-section__eyebrow">{profile.eyebrow}</p>
+                      <h2>{group.label}</h2>
+                    </div>
                   </div>
-                  <p className="collection-section__count">
-                    {getTotalRecommendations([group])} recommendations
-                  </p>
+                  <p className="collection-section__copy">{profile.description}</p>
                 </div>
 
-                <div className="collection-section__jump-row">
-                  <span className="browse-links__label">Jump to a theme</span>
+                <div className="theme-jumps theme-jumps--group">
+                  <span className="theme-jumps__label">Jump to a theme</span>
                   {group.themes.map((theme) => (
-                    <a className="theme-link" href={`#${theme.id}`} key={theme.id}>
+                    <a href={`#${theme.id}`} key={theme.id} className="theme-jump">
                       {theme.title}
                       <span>{theme.recommendations.length}</span>
                     </a>
                   ))}
                 </div>
 
-                <div className="collection-section__themes">
-                  {group.themes.map((theme, themeIndex) => (
+                <div className="theme-stack">
+                  {group.themes.map((theme) => (
                     <article className="theme-panel" id={theme.id} key={theme.id}>
                       <div className="theme-panel__header">
                         <div>
@@ -667,14 +666,12 @@ export default function App() {
                       </div>
 
                       <div className="recommendation-grid">
-                        {theme.recommendations.map((recommendation, recommendationIndex) => (
+                        {theme.recommendations.map((recommendation) => (
                           <RecommendationCard
-                            key={recommendation.id}
-                            recommendation={recommendation}
                             groupLabel={group.label}
+                            key={recommendation.id}
                             profile={profile}
-                            themeIndex={themeIndex}
-                            recommendationIndex={recommendationIndex}
+                            recommendation={recommendation}
                           />
                         ))}
                       </div>
@@ -687,14 +684,14 @@ export default function App() {
         )}
 
         <section className="teacher-section" id="teacher-picks">
-          <div className="teacher-section__header">
+          <div className="section-heading section-heading--compact">
             <div>
-              <p className="section-kicker">Teacher Picks</p>
-              <h2>Ambassador favorites for the classroom and beyond.</h2>
+              <p className="section-heading__eyebrow">Teacher picks</p>
+              <h2>Quick ambassador favorites for when you need a shortlist fast.</h2>
             </div>
-            <p className="teacher-section__copy">
-              Fast recommendations from the Khan Academy ambassador team for
-              when you want a short shortlist instead of a deep browse.
+            <p className="section-heading__copy">
+              This section is intentionally lightweight: fewer choices, faster
+              browsing, and easy sharing with teachers or families.
             </p>
           </div>
 
@@ -707,13 +704,13 @@ export default function App() {
 
         <footer className="footer">
           <p>
-            Built from Khan Academy&apos;s published recommendation doc and made
-            easier to explore for readers, teachers, and families.
+            Built from the published Khan Academy recommendation document and
+            reshaped into a calmer, more visual reading resource.
           </p>
           <div className="footer__links">
             <a href="#top">Back to top</a>
             <a href={readingData.sourceUrl} target="_blank" rel="noreferrer">
-              Visit the source document
+              Open the source doc
             </a>
           </div>
         </footer>
